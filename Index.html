@@ -1,0 +1,3130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>Jeracraft server map</title>
+ 
+
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------------------Show/Hide Script--------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<script type="text/javascript">
+           
+    function Hide (addr) { 
+      document.getElementById(addr).style.display='none';        
+                   
+    }
+    
+    function Show (addr) { 
+      document.getElementById(addr).style.display ='block';
+     
+    }
+
+    function Toggle(anId) {
+      if (document.getElementById(anId).style.display == "none") Show(anId);
+      else Hide(anId); 
+    }
+
+    window.onload = function () {                                      
+
+    };
+
+</script>
+
+
+</head>
+
+
+<body style="margin:0; padding:0;">
+
+
+<!-- <a href='Villager-Trades-in-Minecraft-Chart-HD.jpg' target="_blank">-->      
+<!---<button class="allbutton" onclick="location.href='Villager-Trades-in-Minecraft-Chart-HD.jpg';" style="position: absolute; left: 8526px; top: 5820px">115</button>-->
+
+
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------------Show/Hide Click & Toolbox----------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<div class="Toolbox">
+    <img src="Icons/Jeracraft_Banner.png" draggable="false" style="width: 80%; height: auto; z-index: 1;">
+
+
+<!------Treasure Sites Toggle------>
+
+<a href="#" onclick = "
+
+        Toggle('Treasure1');
+        Toggle('Treasure2');
+        Toggle('Treasure3');
+        Toggle('Treasure4');
+        Toggle('Treasure5');
+        Toggle('Treasure6');
+        Toggle('Treasure7');
+        Toggle('Treasure8');
+        Toggle('Treasure9');
+        Toggle('Treasure10');
+        Toggle('Treasure11');
+        Toggle('Treasure12');
+        Toggle('Treasure13');
+        Toggle('Treasure14');
+        Toggle('Treasure15');
+        Toggle('Treasure16');
+        Toggle('Treasure17');
+        Toggle('Treasure18');
+        Toggle('Treasure19');
+        Toggle('Treasure20');
+        Toggle('Treasure21');
+        Toggle('Treasure22');
+        Toggle('Treasure23');
+        Toggle('Treasure24');
+        Toggle('Treasure25');
+        Toggle('Treasure26');
+        Toggle('Treasure27');
+        Toggle('Treasure28');
+        Toggle('Treasure29');
+        Toggle('Treasure30');
+        Toggle('Treasure31');
+        Toggle('Treasure32');
+        Toggle('Treasure33');
+        Toggle('Treasure34');
+        Toggle('Treasure35');
+        Toggle('Treasure36');
+        Toggle('Treasure37');
+        Toggle('Treasure38');
+        Toggle('Treasure39');
+        Toggle('Treasure40');
+        Toggle('Treasure41');
+        Toggle('Treasure42');
+        Toggle('Treasure43');
+        Toggle('Treasure44');
+        Toggle('Treasure45');
+        Toggle('Treasure46');
+        Toggle('Treasure47');
+        Toggle('Treasure48');
+        Toggle('Treasure49');
+        Toggle('Treasure50');
+        Toggle('Treasure51');
+        Toggle('Treasure52');
+        Toggle('Treasure53');
+        Toggle('Treasure54');
+        Toggle('Treasure55');
+        Toggle('Treasure56');
+        Toggle('Treasure57');
+        Toggle('Treasure58');
+        Toggle('Treasure59');
+        Toggle('Treasure60');
+        Toggle('Treasure61');
+        Toggle('Treasure62');
+        Toggle('Treasure63');
+        Toggle('Treasure64');
+        Toggle('Treasure65');
+        Toggle('Treasure66');
+        Toggle('Treasure67');
+        Toggle('Treasure68');
+        Toggle('Treasure69');
+        Toggle('Treasure70');
+        Toggle('Treasure71');
+        Toggle('Treasure72');
+        Toggle('Treasure73');
+        Toggle('Treasure74');
+        Toggle('Treasure75');
+        Toggle('Treasure76');
+        Toggle('Treasure77');
+        Toggle('Treasure78');
+        Toggle('Treasure79');
+        Toggle('Treasure80');
+        Toggle('Treasure81');
+        Toggle('Treasure82');
+        Toggle('Treasure83');
+        Toggle('Treasure84');
+        Toggle('Treasure85');
+        Toggle('Treasure86');
+        Toggle('Treasure87');
+        Toggle('Treasure88');
+        Toggle('Treasure89');
+        Toggle('Treasure90');
+        Toggle('Treasure91');
+        Toggle('Treasure92');
+        Toggle('Treasure93');
+        Toggle('Treasure94');
+        Toggle('Treasure95');
+        Toggle('Treasure96');
+        Toggle('Treasure97');
+        Toggle('Treasure98');
+        Toggle('Treasure99');
+        Toggle('Treasure100');
+        Toggle('Treasure101');
+        Toggle('Treasure102');
+        Toggle('Treasure103');
+        Toggle('Treasure104');
+        Toggle('Treasure105');
+        Toggle('Treasure106');
+        Toggle('Treasure107');
+        Toggle('Treasure108');
+        Toggle('Treasure109');
+        Toggle('Treasure110');
+        Toggle('Treasure111');
+        Toggle('Treasure112');
+        Toggle('Treasure113');
+        Toggle('Treasure114');
+        Toggle('Treasure115');
+        Toggle('Treasure116');
+        Toggle('Treasure117');
+        Toggle('Treasure118');
+        Toggle('Treasure119');
+        Toggle('Treasure120');
+        Toggle('Treasure121');
+        Toggle('Treasure122');
+        Toggle('Treasure123');
+        Toggle('Treasure124');
+        Toggle('Treasure125');
+
+        return false;
+
+">
+
+<img id= AdventureChestCommonImg src='Icons/Adventure_Chest_Common.png' draggable="false" style="position: absolute; left: 20%; top: 30%; width: 50px; height: auto; z-index: 1"></a>
+
+
+<!------Quests Toggle------>
+
+<a href="#" onclick = "
+
+        Toggle('Quest1');
+        Toggle('Quest2');
+        Toggle('Quest3');
+        Toggle('Quest4');
+        Toggle('Quest5');
+        Toggle('Quest6');
+        Toggle('Quest7');
+        Toggle('Quest8');
+        Toggle('Quest9');
+        Toggle('Quest10');
+        Toggle('Quest11');
+        Toggle('Quest12');
+        Toggle('Quest13');
+        Toggle('Quest14');
+        Toggle('Quest15');
+        Toggle('Quest16');
+        Toggle('Quest17');
+        Toggle('Quest18');
+        Toggle('Quest19');
+        Toggle('Quest20');
+        Toggle('Quest21');
+        Toggle('Quest22');
+        Toggle('Quest23');
+
+        return false;
+
+">
+
+<img id="ExclamationredimensionnéImg" src='Icons/Exclamation_redimensionné.png' draggable="false" style="position: absolute; left: 10%; top: 30%; width: 13px; height: auto; z-index: 1;"></a>
+
+
+<!------Spwaners Toggle------>
+
+<a href="#" onclick = "
+
+        Toggle('Spawner1');
+        Toggle('Spawner2');
+        Toggle('Spawner3');
+        Toggle('Spawner4');
+        Toggle('Spawner5');
+        Toggle('Spawner6');
+        Toggle('Spawner7');
+
+        return false;
+
+">
+
+<img id="SpawnerImg" src='Icons/Spawner.png' draggable="false" style="position: absolute; left: 60%; top: 78%; width: 45px; height: auto; z-index: 1;"></a>
+
+
+<!------Shipwrecks Toggle------>
+
+<a href="#" onclick = "
+
+        Toggle('Shipwreck1');
+        Toggle('Shipwreck2');
+        Toggle('Shipwreck3');
+        Toggle('Shipwreck4');
+        Toggle('Shipwreck5');
+        Toggle('Shipwreck6');
+        Toggle('Shipwreck7');
+        Toggle('Shipwreck8');
+        Toggle('Shipwreck9');
+        Toggle('Shipwreck10');
+        Toggle('Shipwreck11');
+        Toggle('Shipwreck12');
+
+        return false;
+
+">
+
+<img id= ShipwreckOakImg src='Icons/Shipwreck_Oak.png' draggable="false" style="position: absolute; left: 27%; top: 54%; width: 60px; height: auto; z-index: 1"></a>
+
+
+<!------Fossils Toggle------>
+
+<a href="#" onclick = "
+
+        Toggle('Fossil1');
+        Toggle('Fossil2');
+        Toggle('Fossil3');
+        Toggle('Fossil4');
+        Toggle('Fossil5');
+
+        return false;
+
+">
+
+<img id= FossilSpine3Img src='Icons/Fossil_Spine_3.png' draggable="false" style="position: absolute; left: 45%; top: 32%; width: 60px; height: auto; z-index: 1"></a>
+
+
+<!------Villages Toggle------>
+
+<a href="#" onclick = "
+
+        Toggle('Village1');
+        Toggle('Village2');
+        Toggle('Village3');
+        Toggle('Village4');
+        Toggle('Village5');
+        Toggle('Village6');
+        Toggle('Village7');
+        Toggle('Village8');
+        Toggle('Village9');
+        Toggle('Village10');
+        
+        return false;
+
+">
+
+<img id= PlainsSmallHouseImg src='Icons/Plains_Small_House.png' draggable="false" style="position: absolute; left: 78%; top: 57%; width: 55px; height: auto; z-index: 1"></a>
+
+
+<!------Pillagers_Outpost Toggle------>
+
+<a href="#" onclick = "
+
+        Toggle('Pillagers_Outpost1');
+        Toggle('Pillagers_Outpost2');
+
+        return false;
+
+">
+
+<img id= PillageroutpostwatchtowerImg src='Icons/Pillager_outpost_watchtower.png' draggable="false" style="position: absolute; left: 58%; top: 52%; width: 40px; height: auto; z-index: 1"></a>
+
+
+<!------Mineshafts Toggle------>
+
+<a href="#" onclick = "
+
+        Toggle('Mineshaft1');
+        Toggle('Mineshaft2');
+        Toggle('Mineshaft3');
+        Toggle('Mineshaft4');
+        Toggle('Mineshaft5');
+        Toggle('Mineshaft6');
+        Toggle('Mineshaft7');
+
+        return false;
+
+">
+
+<img id= MineshaftImg src='Icons/Minecart.png' draggable="false" style="position: absolute; left: 73%; top: 28%; width: 60px; height: auto; z-index: 1"></a>
+
+
+</div>
+
+<!--------------------Toolbox Style rounded bottom left corner----------------------->
+
+<style>
+
+.Toolbox {
+z-index: 1;
+position: fixed;
+text-align: center;
+width: 250px;
+height: 280px;
+right: 0px;
+background-color: rgba(54, 54, 54, 0.5);
+color: #fff;
+border-radius: 0 0 0 75%;
+
+}
+
+</style>
+
+
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-----------------------------------------------------------------------------------------------------------------------------------World Icons------------------------------------------------------------------------------------------------------------------------------------------------------>
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+<!----------------Map---------------->
+
+    <div id="Container">
+      <div id="Map_Icons">
+        <img src="Icons/Jeracraft_full_world_map - Copie.jpg" alt="zoom" draggable="false">
+
+<!--------------Map CSS-------------->
+
+        <style>
+
+            #Container{            
+            width:3500px;
+            height:3500px;
+            /*max-width: 100%;*/
+            }
+  
+            #Map_Icons{
+            width:100%;
+            height:100%;
+            transition: transform .3s;
+            }
+
+            img{
+            width:auto;
+            height:auto;
+            max-width:100%;
+            }
+
+        </style>
+
+
+<!----------Spawn Point of Interest OverView---------->
+
+            <div class="Castle-wrap" style="position: absolute; left: 48.5%; top: 49.5%; width: 50px; height: auto; display: inline;">
+                <img class="Castle" src="Icons/Castle spawn.png" draggable="false" title="Spawn"/>
+                    <a class="Castle_Aperçu" href="#"></a>
+            </div>
+
+
+            <div class="Knight_Statue-wrap" style="position: absolute; left: 46.6%; top: 48.7%; width: 50px; height: auto; display: inline;">
+                <img class="Knight_Statue" src="Icons/Spawn_Giant_Statue.png" draggable="false" title="Giant Knight Statue"/>
+                    <a class="Knight_Statue_Aperçu" href="#"></a>
+            </div>
+
+
+            <div class="Arena-wrap" style="position: absolute; left: 46.65%; top: 53.7%; width: 50px; height: auto; display: inline;">
+                <img class="Arena" src="Icons/Spawn_Arena.png" draggable="false" title="Arena"/>
+                    <a class="Arena_Aperçu" href="#"></a>
+            </div>
+
+<!-------------Spawn Castle CSS------------>
+
+        <style>
+
+            .Castle {
+            position: absolute;
+            top: 49%;
+            left: 48%;
+            width: 25px;
+            height: auto;
+            }
+            
+            .Castle:hover{
+            -ms-transform: scale(1.5); /* IE 9 */
+            -webkit-transform: scale(1.5); /* Safari 3-8 */
+            transform: scale(1.5); 
+            }
+        
+            .Castle-wrap img {
+                display: block;
+            }
+        
+            .Castle_Aperçu {
+                z-index: 1;
+                display: none;
+                width: 300px;
+                height: 200px;
+                position: absolute;
+                bottom: 20px;
+                left: -115px;
+                border-radius: 10px;                
+                background: url('Screenshots/Spawn/Spawn.jpg');
+                background-size: 300px 200px;             
+            }
+        
+            .Castle-wrap:hover .Castle_Aperçu {
+                display: block;
+            }
+
+/*-------------Spawn Knight Statue CSS------------*/            
+
+            .Knight_Statue {
+            position: absolute;
+            top: 49%;
+            left: 48%;
+            width: 15px;
+            height: auto;
+            }
+            
+            .Knight_Statue:hover{
+            -ms-transform: scale(1.5); /* IE 9 */
+            -webkit-transform: scale(1.5); /* Safari 3-8 */
+            transform: scale(1.5); 
+            }
+        
+            .Knight_Statue-wrap img {
+                display: block;
+            }
+        
+            .Knight_Statue_Aperçu {
+                z-index: 1;
+                display: none;
+                width: 283.75px;
+                height: 317.5px;
+                position: absolute;
+                bottom: 20px;
+                left: -115px;
+                border-radius: 10px;                
+                background: url('Screenshots/Spawn/Spawn_Knight_Giant_Statue.jpg');
+                background-size: 300px 350px;             
+            }
+        
+            .Knight_Statue-wrap:hover .Knight_Statue_Aperçu {
+                display: block;
+            }
+ 
+/*-------------Spawn Arena CSS------------*/
+
+            .Arena {
+            position: absolute;
+            top: 49%;
+            left: 48%;
+            width: 25px;
+            height: auto;
+            }
+            
+            .Arena:hover{
+            -ms-transform: scale(1.5); /* IE 9 */
+            -webkit-transform: scale(1.5); /* Safari 3-8 */
+            transform: scale(1.5); 
+            }
+        
+            .Arena-wrap img {
+                display: block;
+            }
+        
+            .Arena_Aperçu {
+                z-index: 1;
+                display: none;
+                width: 300px;
+                height: 200px;
+                position: absolute;
+                bottom: 20px;
+                left: -115px;
+                border-radius: 10px;                
+                background: url('Screenshots/Spawn/Spawn_arena.jpg');
+                background-size: 300px 200px;             
+            }
+        
+            .Arena-wrap:hover .Arena_Aperçu {
+                display: block;
+            }
+
+        </style>     
+
+
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------Treasure Sites Links-------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<div id="Treasure1" class="Treasure1-wrap" style="position: absolute; left: 99.1210866564974%; top: 5.53879686137751%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Epic.png" style="filter: drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158));" draggable="false" title=""/><a class="Treasure1_Aperçu" href="#"></a></div>
+<div id="Treasure2" class="Treasure2-wrap" style="position: absolute; left: 97.359628096172%; top: 34.0915431560593%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Legendary.png" style="filter: drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44));" draggable="false" title=""/><a class="Treasure2_Aperçu" href="#"></a></div>
+<div id="Treasure3" class="Treasure3-wrap" style="position: absolute; left: 95.1714244207162%; top: 43.2832025573961%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Epic.png" style="filter: drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158));" draggable="false" title=""/><a class="Treasure3_Aperçu" href="#"></a></div>
+<div id="Treasure4" class="Treasure4-wrap" style="position: absolute; left: 92.8197864458488%; top: 63.4197719183555%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Epic.png" style="filter: drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158));" draggable="false" title=""/><a class="Treasure4_Aperçu" href="#"></a></div>
+<div id="Treasure5" class="Treasure5-wrap" style="position: absolute; left: 92.8107067625481%; top: 52.9599767560108%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Legendary.png" style="filter: drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44));" draggable="false" title=""/><a class="Treasure5_Aperçu" href="#"></a></div>
+<div id="Treasure6" class="Treasure6-wrap" style="position: absolute; left: 91.6031088835621%; top: 17.9907730310956%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Epic.png" style="filter: drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158));" draggable="false" title=""/><a class="Treasure6_Aperçu" href="#"></a></div>
+<div id="Treasure7" class="Treasure7-wrap" style="position: absolute; left: 90.6769811868962%; top: 79.7813612261204%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Legendary.png" style="filter: drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44));" draggable="false" title=""/><a class="Treasure7_Aperçu" href="#"></a></div>
+<div id="Treasure8" class="Treasure8-wrap" style="position: absolute; left: 89.3150286917992%; top: 71.0467058908985%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Rare.png" style="filter: drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0);" draggable="false" title=""/><a class="Treasure8_Aperçu" href="#"></a></div>
+<div id="Treasure9" class="Treasure9-wrap" style="position: absolute; left: 86.8362751507227%; top: 87.5898888646764%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Epic.png" style="filter: drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158));" draggable="false" title=""/><a class="Treasure9_Aperçu" href="#"></a></div>
+<div id="Treasure10" class="Treasure10-wrap" style="position: absolute; left: 85.4924820222271%; top: 71.5460884724341%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Uncommon.png" style="filter: drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11));" draggable="false" title=""/><a class="Treasure10_Aperçu" href="#"></a></div>
+<div id="Treasure11" class="Treasure11-wrap" style="position: absolute; left: 85.4107648725212%; top: 34.8554199360651%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Rare.png" style="filter: drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0);" draggable="false" title=""/><a class="Treasure11_Aperçu" href="#"></a></div>
+<div id="Treasure12" class="Treasure12-wrap" style="position: absolute; left: 84.2485654100385%; top: 15.7294391165359%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Rare.png" style="filter: drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0);" draggable="false" title=""/><a class="Treasure12_Aperçu" href="#"></a></div>
+<div id="Treasure13" class="Treasure13-wrap" style="position: absolute; left: 83.9670952277185%; top: 26.6092705608835%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Legendary.png" style="filter: drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44));" draggable="false" title=""/><a class="Treasure13_Aperçu" href="#"></a></div>
+<div id="Treasure14" class="Treasure14-wrap" style="position: absolute; left: 83.413234546379%; top: 40.5950305143853%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Epic.png" style="filter: drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158));" draggable="false" title=""/><a class="Treasure14_Aperçu" href="#"></a></div>
+<div id="Treasure15" class="Treasure15-wrap" style="position: absolute; left: 83.0500472143532%; top: 67.3058763710322%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Legendary.png" style="filter: drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44));" draggable="false" title=""/><a class="Treasure15_Aperçu" href="#"></a></div>
+<div id="Treasure16" class="Treasure16-wrap" style="position: absolute; left: 82.1420788842885%; top: 60.8048231277693%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Epic.png" style="filter: drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158));" draggable="false" title=""/><a class="Treasure16_Aperçu" href="#"></a></div>
+<div id="Treasure17" class="Treasure17-wrap" style="position: absolute; left: 81.4974213699426%; top: 18.6264893926184%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Epic.png" style="filter: drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158));" draggable="false" title=""/><a class="Treasure17_Aperçu" href="#"></a></div>
+<div id="Treasure18" class="Treasure18-wrap" style="position: absolute; left: 81.4701823200407%; top: 2.4429671607091%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Epic.png" style="filter: drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158));" draggable="false" title=""/><a class="Treasure18_Aperçu" href="#"></a></div>
+<div id="Treasure19" class="Treasure19-wrap" style="position: absolute; left: 81.3249073872303%; top: 31.6586748038361%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Uncommon.png" style="filter: drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11));" draggable="false" title=""/><a class="Treasure19_Aperçu" href="#"></a></div>
+<div id="Treasure20" class="Treasure20-wrap" style="position: absolute; left: 80.6166920897799%; top: 96.1701895837873%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Legendary.png" style="filter: drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44));" draggable="false" title=""/><a class="Treasure20_Aperçu" href="#"></a></div>
+<div id="Treasure21" class="Treasure21-wrap" style="position: absolute; left: 78.9097116292584%; top: 47.0066841034583%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Uncommon.png" style="filter: drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11));" draggable="false" title=""/><a class="Treasure21_Aperçu" href="#"></a></div>
+<div id="Treasure22" class="Treasure22-wrap" style="position: absolute; left: 76.6761095372993%; top: 77.6476356504685%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Epic.png" style="filter: drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158));" draggable="false" title=""/><a class="Treasure22_Aperçu" href="#"></a></div>
+<div id="Treasure23" class="Treasure23-wrap" style="position: absolute; left: 76.3310815718748%; top: 55.5840052298976%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Epic.png" style="filter: drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158));" draggable="false" title=""/><a class="Treasure23_Aperçu" href="#"></a></div>
+<div id="Treasure24" class="Treasure24-wrap" style="position: absolute; left: 75.8407786736399%; top: 87.8895184135977%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Rare.png" style="filter: drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0);" draggable="false" title=""/><a class="Treasure24_Aperçu" href="#"></a></div>
+<div id="Treasure25" class="Treasure25-wrap" style="position: absolute; left: 75.6047069078231%; top: 61.3496041258081%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Epic.png" style="filter: drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158));" draggable="false" title=""/><a class="Treasure25_Aperçu" href="#"></a></div>
+<div id="Treasure26" class="Treasure26-wrap" style="position: absolute; left: 73.9249654972035%; top: 47.2246439988375%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Rare.png" style="filter: drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0);" draggable="false" title=""/><a class="Treasure26_Aperçu" href="#"></a></div>
+<div id="Treasure27" class="Treasure27-wrap" style="position: absolute; left: 72.9715987506356%; top: 53.2777656715334%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Uncommon.png" style="filter: drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11));" draggable="false" title=""/><a class="Treasure27_Aperçu" href="#"></a></div>
+<div id="Treasure28" class="Treasure28-wrap" style="position: absolute; left: 71.6096462555386%; top: 66.5250236071766%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Legendary.png" style="filter: drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44));" draggable="false" title=""/><a class="Treasure28_Aperçu" href="#"></a></div>
+<div id="Treasure29" class="Treasure29-wrap" style="position: absolute; left: 70.8832715914869%; top: 86.3187332025859%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Legendary.png" style="filter: drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44));" draggable="false" title=""/><a class="Treasure29_Aperçu" href="#"></a></div>
+<div id="Treasure30" class="Treasure30-wrap" style="position: absolute; left: 70.3748093266507%; top: 29.6062191223482%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Epic.png" style="filter: drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158));" draggable="false" title=""/><a class="Treasure30_Aperçu" href="#"></a></div>
+<div id="Treasure31" class="Treasure31-wrap" style="position: absolute; left: 70.1932156606378%; top: 9.29054054054054%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Uncommon.png" style="filter: drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11));" draggable="false" title=""/><a class="Treasure31_Aperçu" href="#"></a></div>
+<div id="Treasure32" class="Treasure32-wrap" style="position: absolute; left: 68.7041475993317%; top: 15.4842342342342%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Legendary.png" style="filter: drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44));" draggable="false" title=""/><a class="Treasure32_Aperçu" href="#"></a></div>
+<div id="Treasure33" class="Treasure33-wrap" style="position: absolute; left: 68.159366601293%; top: 75.2415195757972%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Legendary.png" style="filter: drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44));" draggable="false" title=""/><a class="Treasure33_Aperçu" href="#"></a></div>
+<div id="Treasure34" class="Treasure34-wrap" style="position: absolute; left: 68.159366601293%; top: 75.2415195757972%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Legendary.png" style="filter: drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44));" draggable="false" title=""/><a class="Treasure34_Aperçu" href="#"></a></div>
+<div id="Treasure35" class="Treasure35-wrap" style="position: absolute; left: 68.1412072346916%; top: 57.5906152393405%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Rare.png" style="filter: drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0);" draggable="false" title=""/><a class="Treasure35_Aperçu" href="#"></a></div>
+<div id="Treasure36" class="Treasure36-wrap" style="position: absolute; left: 67.6509043364567%; top: 34.8190932868352%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Uncommon.png" style="filter: drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11));" draggable="false" title=""/><a class="Treasure36_Aperçu" href="#"></a></div>
+<div id="Treasure37" class="Treasure37-wrap" style="position: absolute; left: 66.4977845572747%; top: 65.1449117454783%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Legendary.png" style="filter: drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44));" draggable="false" title=""/><a class="Treasure37_Aperçu" href="#"></a></div>
+<div id="Treasure38" class="Treasure38-wrap" style="position: absolute; left: 65.4899397109029%; top: 66.6521391733856%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Epic.png" style="filter: drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158));" draggable="false" title=""/><a class="Treasure38_Aperçu" href="#"></a></div>
+<div id="Treasure39" class="Treasure39-wrap" style="position: absolute; left: 65.2266288951841%; top: 50.0363187332026%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Rare.png" style="filter: drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0);" draggable="false" title=""/><a class="Treasure39_Aperçu" href="#"></a></div>
+<div id="Treasure40" class="Treasure40-wrap" style="position: absolute; left: 65.1630711120796%; top: 30.7051002615519%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Rare.png" style="filter: drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0);" draggable="false" title=""/><a class="Treasure40_Aperçu" href="#"></a></div>
+<div id="Treasure41" class="Treasure41-wrap" style="position: absolute; left: 64.3458996150214%; top: 2.27041557686719%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Rare.png" style="filter: drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0);" draggable="false" title=""/><a class="Treasure41_Aperçu" href="#"></a></div>
+<div id="Treasure42" class="Treasure42-wrap" style="position: absolute; left: 63.6740030507736%; top: 71.5551681557347%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Rare.png" style="filter: drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0);" draggable="false" title=""/><a class="Treasure42_Aperçu" href="#"></a></div>
+<div id="Treasure43" class="Treasure43-wrap" style="position: absolute; left: 62.1667756228663%; top: 92.7653083460449%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Rare.png" style="filter: drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0);" draggable="false" title=""/><a class="Treasure43_Aperçu" href="#"></a></div>
+<div id="Treasure44" class="Treasure44-wrap" style="position: absolute; left: 61.9579429069514%; top: 56.4647345100603%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Legendary.png" style="filter: drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44));" draggable="false" title=""/><a class="Treasure44_Aperçu" href="#"></a></div>
+<div id="Treasure45" class="Treasure45-wrap" style="position: absolute; left: 60.8956199607758%; top: 47.4970938680616%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Uncommon.png" style="filter: drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11));" draggable="false" title=""/><a class="Treasure45_Aperçu" href="#"></a></div>
+<div id="Treasure46" class="Treasure46-wrap" style="position: absolute; left: 60.7140262947628%; top: 23.7939552455681%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Legendary.png" style="filter: drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44));" draggable="false" title=""/><a class="Treasure46_Aperçu" href="#"></a></div>
+<div id="Treasure47" class="Treasure47-wrap" style="position: absolute; left: 58.8799302680323%; top: 63.5014890680613%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Epic.png" style="filter: drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158));" draggable="false" title=""/><a class="Treasure47_Aperçu" href="#"></a></div>
+<div id="Treasure48" class="Treasure48-wrap" style="position: absolute; left: 58.4077867363986%; top: 73.8704873973996%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Common.png" style="filter: drop-shadow(0 0 0.1rem rgb(48, 48, 48)) drop-shadow(0 0 0.1rem rgb(48, 48, 48)) drop-shadow(0 0 0.1rem rgb(48, 48, 48)) drop-shadow(0 0 0.1rem rgb(48, 48, 48));" draggable="false" title=""/><a class="Treasure48_Aperçu" href="#"></a></div>
+<div id="Treasure49" class="Treasure49-wrap" style="position: absolute; left: 58.3169899033922%; top: 44.1368788142982%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Rare.png" style="filter: drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0);" draggable="false" title=""/><a class="Treasure49_Aperçu" href="#"></a></div>
+<div id="Treasure50" class="Treasure50-wrap" style="position: absolute; left: 57.0549139246023%; top: 11.6790177274048%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Epic.png" style="filter: drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158));" draggable="false" title=""/><a class="Treasure50_Aperçu" href="#"></a></div>
+<div id="Treasure51" class="Treasure51-wrap" style="position: absolute; left: 55.5930849131982%; top: 46.4345393780878%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Rare.png" style="filter: drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0);" draggable="false" title=""/><a class="Treasure51_Aperçu" href="#"></a></div>
+<div id="Treasure52" class="Treasure52-wrap" style="position: absolute; left: 55.4387302970872%; top: 87.8078012638919%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Epic.png" style="filter: drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158));" draggable="false" title=""/><a class="Treasure52_Aperçu" href="#"></a></div>
+<div id="Treasure53" class="Treasure53-wrap" style="position: absolute; left: 54.1584949516961%; top: 51.9158131764364%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Uncommon.png" style="filter: drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11));" draggable="false" title=""/><a class="Treasure53_Aperçu" href="#"></a></div>
+<div id="Treasure54" class="Treasure54-wrap" style="position: absolute; left: 53.9405825524806%; top: 81.4429432701387%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Uncommon.png" style="filter: drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11));" draggable="false" title=""/><a class="Treasure54_Aperçu" href="#"></a></div>
+<div id="Treasure55" class="Treasure55-wrap" style="position: absolute; left: 53.6500326868599%; top: 65.5625771773081%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Uncommon.png" style="filter: drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11));" draggable="false" title=""/><a class="Treasure55_Aperçu" href="#"></a></div>
+<div id="Treasure56" class="Treasure56-wrap" style="position: absolute; left: 52.1518849422532%; top: 33.0935774484162%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Rare.png" style="filter: drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0);" draggable="false" title=""/><a class="Treasure56_Aperçu" href="#"></a></div>
+<div id="Treasure57" class="Treasure57-wrap" style="position: absolute; left: 52.0610881092468%; top: 3.44195001453066%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Rare.png" style="filter: drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0);" draggable="false" title=""/><a class="Treasure57_Aperçu" href="#"></a></div>
+<div id="Treasure58" class="Treasure58-wrap" style="position: absolute; left: 51.2166775622866%; top: 86.6365221181085%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Uncommon.png" style="filter: drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11));" draggable="false" title=""/><a class="Treasure58_Aperçu" href="#"></a></div>
+<div id="Treasure59" class="Treasure59-wrap" style="position: absolute; left: 50.6355778310453%; top: 97.3959468293746%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Epic.png" style="filter: drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158));" draggable="false" title=""/><a class="Treasure59_Aperçu" href="#"></a></div>
+<div id="Treasure60" class="Treasure60-wrap" style="position: absolute; left: 50.4267451151304%; top: 36.8261406567858%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Epic.png" style="filter: drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158));" draggable="false" title=""/><a class="Treasure60_Aperçu" href="#"></a></div>
+<div id="Treasure61" class="Treasure61-wrap" style="position: absolute; left: 48.7231182795699%; top: 59.7152611316917%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Uncommon.png" style="filter: drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11));" draggable="false" title=""/><a class="Treasure61_Aperçu" href="#"></a></div>
+<div id="Treasure62" class="Treasure62-wrap" style="position: absolute; left: 48.4052600988085%; top: 65.435461611099%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Rare.png" style="filter: drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0);" draggable="false" title=""/><a class="Treasure62_Aperçu" href="#"></a></div>
+<div id="Treasure63" class="Treasure63-wrap" style="position: absolute; left: 48.1418918918919%; top: 29.0249927346702%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Rare.png" style="filter: drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0);" draggable="false" title=""/><a class="Treasure63_Aperçu" href="#"></a></div>
+<div id="Treasure64" class="Treasure64-wrap" style="position: absolute; left: 47.524338854984%; top: 23.4125254286545%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Rare.png" style="filter: drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0);" draggable="false" title=""/><a class="Treasure64_Aperçu" href="#"></a></div>
+<div id="Treasure65" class="Treasure65-wrap" style="position: absolute; left: 47.2246439988375%; top: 42.7837111304853%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Uncommon.png" style="filter: drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11));" draggable="false" title=""/><a class="Treasure65_Aperçu" href="#"></a></div>
+<div id="Treasure66" class="Treasure66-wrap" style="position: absolute; left: 45.8987213019471%; top: 81.488341686642%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Legendary.png" style="filter: drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44));" draggable="false" title=""/><a class="Treasure66_Aperçu" href="#"></a></div>
+<div id="Treasure67" class="Treasure67-wrap" style="position: absolute; left: 45.8623946527172%; top: 0.36326649229875%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Rare.png" style="filter: drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0);" draggable="false" title=""/><a class="Treasure67_Aperçu" href="#"></a></div>
+<div id="Treasure68" class="Treasure68-wrap" style="position: absolute; left: 45.7715780296425%; top: 19.3711857018309%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Rare.png" style="filter: drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0);" draggable="false" title=""/><a class="Treasure68_Aperçu" href="#"></a></div>
+<div id="Treasure69" class="Treasure69-wrap" style="position: absolute; left: 44.9633100842778%; top: 52.8873392896056%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Rare.png" style="filter: drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0);" draggable="false" title=""/><a class="Treasure69_Aperçu" href="#"></a></div>
+<div id="Treasure70" class="Treasure70-wrap" style="position: absolute; left: 44.3639203719849%; top: 47.3608689334496%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Uncommon.png" style="filter: drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11));" draggable="false" title=""/><a class="Treasure70_Aperçu" href="#"></a></div>
+<div id="Treasure71" class="Treasure71-wrap" style="position: absolute; left: 41.9572798605057%; top: 68.4317571003124%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Uncommon.png" style="filter: drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11));" draggable="false" title=""/><a class="Treasure71_Aperçu" href="#"></a></div>
+<div id="Treasure72" class="Treasure72-wrap" style="position: absolute; left: 41.9027898866609%; top: 48.7776082534147%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Rare.png" style="filter: drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0);" draggable="false" title=""/><a class="Treasure72_Aperçu" href="#"></a></div>
+<div id="Treasure73" class="Treasure73-wrap" style="position: absolute; left: 41.6666666666667%; top: 28.9160127869805%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Epic.png" style="filter: drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158));" draggable="false" title=""/><a class="Treasure73_Aperçu" href="#"></a></div>
+<div id="Treasure74" class="Treasure74-wrap" style="position: absolute; left: 40.5950305143853%; top: 13.0321854112177%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Epic.png" style="filter: drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158));" draggable="false" title=""/><a class="Treasure74_Aperçu" href="#"></a></div>
+<div id="Treasure75" class="Treasure75-wrap" style="position: absolute; left: 39.1601278698053%; top: 37.8796134844522%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Uncommon.png" style="filter: drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11));" draggable="false" title=""/><a class="Treasure75_Aperçu" href="#"></a></div>
+<div id="Treasure76" class="Treasure76-wrap" style="position: absolute; left: 38.9694129613484%; top: 81.1160746713155%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Epic.png" style="filter: drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158));" draggable="false" title=""/><a class="Treasure76_Aperçu" href="#"></a></div>
+<div id="Treasure77" class="Treasure77-wrap" style="position: absolute; left: 38.7968613775065%; top: 45.8623946527172%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Uncommon.png" style="filter: drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11));" draggable="false" title=""/><a class="Treasure77_Aperçu" href="#"></a></div>
+<div id="Treasure78" class="Treasure78-wrap" style="position: absolute; left: 38.4154315605929%; top: 54.6397181666303%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Uncommon.png" style="filter: drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11));" draggable="false" title=""/><a class="Treasure78_Aperçu" href="#"></a></div>
+<div id="Treasure79" class="Treasure79-wrap" style="position: absolute; left: 38.2337983144435%; top: 46.7342342342342%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Uncommon.png" style="filter: drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11));" draggable="false" title=""/><a class="Treasure79_Aperçu" href="#"></a></div>
+<div id="Treasure80" class="Treasure80-wrap" style="position: absolute; left: 37.507265329846%; top: 72.2452240865839%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Legendary.png" style="filter: drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44));" draggable="false" title=""/><a class="Treasure80_Aperçu" href="#"></a></div>
+<div id="Treasure81" class="Treasure81-wrap" style="position: absolute; left: 37.1803254867771%; top: 41.575850043592%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Uncommon.png" style="filter: drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11));" draggable="false" title=""/><a class="Treasure81_Aperçu" href="#"></a></div>
+<div id="Treasure82" class="Treasure82-wrap" style="position: absolute; left: 36.1540976460331%; top: 86.3187332025859%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Uncommon.png" style="filter: drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11));" draggable="false" title=""/><a class="Treasure82_Aperçu" href="#"></a></div>
+<div id="Treasure83" class="Treasure83-wrap" style="position: absolute; left: 36.0905260098809%; top: 24.5477332170881%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Uncommon.png" style="filter: drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11));" draggable="false" title=""/><a class="Treasure83_Aperçu" href="#"></a></div>
+<div id="Treasure84" class="Treasure84-wrap" style="position: absolute; left: 34.9734815460622%; top: 58.9616474177381%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Uncommon.png" style="filter: drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11));" draggable="false" title=""/><a class="Treasure84_Aperçu" href="#"></a></div>
+<div id="Treasure85" class="Treasure85-wrap" style="position: absolute; left: 34.292356873002%; top: 64.6092104307402%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Uncommon.png" style="filter: drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11));" draggable="false" title=""/><a class="Treasure85_Aperçu" href="#"></a></div>
+<div id="Treasure86" class="Treasure86-wrap" style="position: absolute; left: 32.1490845684394%; top: 44.4184103458297%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Rare.png" style="filter: drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0);" draggable="false" title=""/><a class="Treasure86_Aperçu" href="#"></a></div>
+<div id="Treasure87" class="Treasure87-wrap" style="position: absolute; left: 31.0592850915432%; top: 46.5889276373147%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Uncommon.png" style="filter: drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11));" draggable="false" title=""/><a class="Treasure87_Aperçu" href="#"></a></div>
+<div id="Treasure88" class="Treasure88-wrap" style="position: absolute; left: 31.0320401046208%; top: 83.8308999782088%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Rare.png" style="filter: drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0);" draggable="false" title=""/><a class="Treasure88_Aperçu" href="#"></a></div>
+<div id="Treasure89" class="Treasure89-wrap" style="position: absolute; left: 31.0047951176983%; top: 38.9058413251962%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Legendary.png" style="filter: drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44));" draggable="false" title=""/><a class="Treasure89_Aperçu" href="#"></a></div>
+<div id="Treasure90" class="Treasure90-wrap" style="position: absolute; left: 30.8776518453938%; top: 2.72449869224063%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Epic.png" style="filter: drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158));" draggable="false" title=""/><a class="Treasure90_Aperçu" href="#"></a></div>
+<div id="Treasure91" class="Treasure91-wrap" style="position: absolute; left: 30.1511188607963%; top: 16.9463818657367%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Rare.png" style="filter: drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0);" draggable="false" title=""/><a class="Treasure91_Aperçu" href="#"></a></div>
+<div id="Treasure92" class="Treasure92-wrap" style="position: absolute; left: 29.6788724208079%; top: 57.1275513910075%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Uncommon.png" style="filter: drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11));" draggable="false" title=""/><a class="Treasure92_Aperçu" href="#"></a></div>
+<div id="Treasure93" class="Treasure93-wrap" style="position: absolute; left: 27.4629468177855%; top: 96.9601220309436%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Epic.png" style="filter: drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158));" draggable="false" title=""/><a class="Treasure93_Aperçu" href="#"></a></div>
+<div id="Treasure94" class="Treasure94-wrap" style="position: absolute; left: 27.4357018308631%; top: 71.3372557565192%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Epic.png" style="filter: drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158));" draggable="false" title=""/><a class="Treasure94_Aperçu" href="#"></a></div>
+<div id="Treasure95" class="Treasure95-wrap" style="position: absolute; left: 26.6455972101133%; top: 41.3034001743679%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Uncommon.png" style="filter: drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11));" draggable="false" title=""/><a class="Treasure95_Aperçu" href="#"></a></div>
+<div id="Treasure96" class="Treasure96-wrap" style="position: absolute; left: 25.8100842778262%; top: 50.4085857485291%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Rare.png" style="filter: drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0);" draggable="false" title=""/><a class="Treasure96_Aperçu" href="#"></a></div>
+<div id="Treasure97" class="Treasure97-wrap" style="position: absolute; left: 25.2106945655333%; top: 77.4478826178543%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Uncommon.png" style="filter: drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11));" draggable="false" title=""/><a class="Treasure97_Aperçu" href="#"></a></div>
+<div id="Treasure98" class="Treasure98-wrap" style="position: absolute; left: 24.7929380993897%; top: 43.1378959604766%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Legendary.png" style="filter: drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44));" draggable="false" title=""/><a class="Treasure98_Aperçu" href="#"></a></div>
+<div id="Treasure99" class="Treasure99-wrap" style="position: absolute; left: 23.8121185701831%; top: 26.2187590816623%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Rare.png" style="filter: drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0);" draggable="false" title=""/><a class="Treasure99_Aperçu" href="#"></a></div>
+<div id="Treasure100" class="Treasure100-wrap" style="position: absolute; left: 21.1875181633246%; top: 9.2723772159256%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Legendary.png" style="filter: drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44));" draggable="false" title=""/><a class="Treasure100_Aperçu" href="#"></a></div>
+<div id="Treasure101" class="Treasure101-wrap" style="position: absolute; left: 21.1148648648649%; top: 70.0207016779255%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Rare.png" style="filter: drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0);" draggable="false" title=""/><a class="Treasure101_Aperçu" href="#"></a></div>
+<div id="Treasure102" class="Treasure102-wrap" style="position: absolute; left: 20.9786399302528%; top: 58.98888646764%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Uncommon.png" style="filter: drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11));" draggable="false" title=""/><a class="Treasure102_Aperçu" href="#"></a></div>
+<div id="Treasure103" class="Treasure103-wrap" style="position: absolute; left: 18.90802092415%; top: 34.8554199360651%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Uncommon.png" style="filter: drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11));" draggable="false" title=""/><a class="Treasure103_Aperçu" href="#"></a></div>
+<div id="Treasure104" class="Treasure104-wrap" style="position: absolute; left: 18.6264893926184%; top: 37.6071636152281%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Epic.png" style="filter: drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158));" draggable="false" title=""/><a class="Treasure104_Aperçu" href="#"></a></div>
+<div id="Treasure105" class="Treasure105-wrap" style="position: absolute; left: 18.1451612903226%; top: 23.0129322871258%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Legendary.png" style="filter: drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44));" draggable="false" title=""/><a class="Treasure105_Aperçu" href="#"></a></div>
+<div id="Treasure106" class="Treasure106-wrap" style="position: absolute; left: 15.0755594303981%; top: 16.1653589072944%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Legendary.png" style="filter: drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44));" draggable="false" title=""/><a class="Treasure106_Aperçu" href="#"></a></div>
+<div id="Treasure107" class="Treasure107-wrap" style="position: absolute; left: 13.967596628887%; top: 1.38949433304272%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Rare.png" style="filter: drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0);" draggable="false" title=""/><a class="Treasure107_Aperçu" href="#"></a></div>
+<div id="Treasure108" class="Treasure108-wrap" style="position: absolute; left: 13.5135135135135%; top: 19.4347573379831%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Uncommon.png" style="filter: drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11));" draggable="false" title=""/><a class="Treasure108_Aperçu" href="#"></a></div>
+<div id="Treasure109" class="Treasure109-wrap" style="position: absolute; left: 13.4499418773612%; top: 82.4598677998111%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Epic.png" style="filter: drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158));" draggable="false" title=""/><a class="Treasure109_Aperçu" href="#"></a></div>
+<div id="Treasure110" class="Treasure110-wrap" style="position: absolute; left: 11.1250363266492%; top: 94.4632091232658%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Rare.png" style="filter: drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0);" draggable="false" title=""/><a class="Treasure110_Aperçu" href="#"></a></div>
+<div id="Treasure111" class="Treasure111-wrap" style="position: absolute; left: 10.5347282766638%; top: 49.2226097064807%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Epic.png" style="filter: drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158));" draggable="false" title=""/><a class="Treasure111_Aperçu" href="#"></a></div>
+<div id="Treasure112" class="Treasure112-wrap" style="position: absolute; left: 8.60941586748038%; top: 62.3574489721799%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Rare.png" style="filter: drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0);" draggable="false" title=""/><a class="Treasure112_Aperçu" href="#"></a></div>
+<div id="Treasure113" class="Treasure113-wrap" style="position: absolute; left: 8.53676256902063%; top: 37.507265329846%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Legendary.png" style="filter: drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44));" draggable="false" title=""/><a class="Treasure113_Aperçu" href="#"></a></div>
+<div id="Treasure114" class="Treasure114-wrap" style="position: absolute; left: 7.90104620749782%; top: 34.1470502760825%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Uncommon.png" style="filter: drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11));" draggable="false" title=""/><a class="Treasure114_Aperçu" href="#"></a></div>
+<div id="Treasure115" class="Treasure115-wrap" style="position: absolute; left: 5.81226387678001%; top: 44.0460621912235%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Legendary.png" style="filter: drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44));" draggable="false" title=""/><a class="Treasure115_Aperçu" href="#"></a></div>
+<div id="Treasure116" class="Treasure116-wrap" style="position: absolute; left: 5.81226387678001%; top: 44.0460621912235%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Legendary.png" style="filter: drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44));" draggable="false" title=""/><a class="Treasure116_Aperçu" href="#"></a></div>
+<div id="Treasure117" class="Treasure117-wrap" style="position: absolute; left: 5.81226387678001%; top: 44.0460621912235%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Legendary.png" style="filter: drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44)) drop-shadow(0 0 0.1rem rgb(239, 151, 44));" draggable="false" title=""/><a class="Treasure117_Aperçu" href="#"></a></div>
+<div id="Treasure118" class="Treasure118-wrap" style="position: absolute; left: 5.73961057832026%; top: 72.3360209195903%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Epic.png" style="filter: drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158)) drop-shadow(0 0 0.1rem rgb(117, 46, 158));" draggable="false" title=""/><a class="Treasure118_Aperçu" href="#"></a></div>
+<div id="Treasure119" class="Treasure119-wrap" style="position: absolute; left: 3.93235977913397%; top: 18.1633246149375%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Uncommon.png" style="filter: drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11)) drop-shadow(0 0 0.1rem rgb(46, 152, 11));" draggable="false" title=""/><a class="Treasure119_Aperçu" href="#"></a></div>
+<div id="Treasure120" class="Treasure120-wrap" style="position: absolute; left: 0.908166230746876%; top: 95.7979225684608%; width: 25px; height: auto; display: inline-block;"><img class="Chest" src="Icons/Adventure_Chest_Rare.png" style="filter: drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0) drop-shadow(0 0 0.1rem #0092c0);" draggable="false" title=""/><a class="Treasure120_Aperçu" href="#"></a></div>
+
+<!------Treasure Sites CSS/Hover------->
+
+        <style>
+
+            .Chest{
+            width: 25px;
+            height: auto;
+            transition: transform .1s;
+            }
+            
+            .Chest:hover{
+            -ms-transform: scale(1.5); /* IE 9 */
+            -webkit-transform: scale(1.5); /* Safari 3-8 */
+            transform: scale(1.5); 
+            }
+            
+/* Do not delete .Chest & .Chest:hover */
+
+            .Treasure1-wrap img {
+                    display: block;
+                }
+
+            .Treasure1_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/18.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure1-wrap:hover .Treasure1_Aperçu {
+                    display: block;
+                }
+
+            .Treasure2-wrap img {
+                    display: block;
+                }
+
+            .Treasure2_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/65.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure2-wrap:hover .Treasure2_Aperçu {
+                    display: block;
+                }
+
+            .Treasure3-wrap img {
+                    display: block;
+                }
+
+            .Treasure3_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/73.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure3-wrap:hover .Treasure3_Aperçu {
+                    display: block;
+                }
+
+            .Treasure4-wrap img {
+                    display: block;
+                }
+
+            .Treasure4_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/48.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure4-wrap:hover .Treasure4_Aperçu {
+                    display: block;
+                }
+
+            .Treasure5-wrap img {
+                    display: block;
+                }
+
+            .Treasure5_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/117.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure5-wrap:hover .Treasure5_Aperçu {
+                    display: block;
+                }
+
+            .Treasure6-wrap img {
+                    display: block;
+                }
+
+            .Treasure6_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/32.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure6-wrap:hover .Treasure6_Aperçu {
+                    display: block;
+                }
+
+            .Treasure9-wrap img {
+                    display: block;
+                }
+
+            .Treasure9_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/17.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure9-wrap:hover .Treasure9_Aperçu {
+                    display: block;
+                }
+
+            .Treasure10-wrap img {
+                    display: block;
+                }
+
+            .Treasure10_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/44.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure10-wrap:hover .Treasure10_Aperçu {
+                    display: block;
+                }
+
+            .Treasure11-wrap img {
+                    display: block;
+                }
+
+            .Treasure11_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/56.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure11-wrap:hover .Treasure11_Aperçu {
+                    display: block;
+                }
+
+            .Treasure12-wrap img {
+                    display: block;
+                }
+
+            .Treasure12_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/36.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure12-wrap:hover .Treasure12_Aperçu {
+                    display: block;
+                }
+
+            .Treasure13-wrap img {
+                    display: block;
+                }
+
+            .Treasure13_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/67.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure13-wrap:hover .Treasure13_Aperçu {
+                    display: block;
+                }
+
+            .Treasure14-wrap img {
+                    display: block;
+                }
+
+            .Treasure14_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/3.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure14-wrap:hover .Treasure14_Aperçu {
+                    display: block;
+                }
+
+            .Treasure15-wrap img {
+                    display: block;
+                }
+
+            .Treasure15_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/89.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure15-wrap:hover .Treasure15_Aperçu {
+                    display: block;
+                }
+
+            .Treasure16-wrap img {
+                    display: block;
+                }
+
+            .Treasure16_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/16.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure16-wrap:hover .Treasure16_Aperçu {
+                    display: block;
+                }
+
+            .Treasure18-wrap img {
+                    display: block;
+                }
+
+            .Treasure18_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/38.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure18-wrap:hover .Treasure18_Aperçu {
+                    display: block;
+                }
+
+            .Treasure21-wrap img {
+                    display: block;
+                }
+
+            .Treasure21_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/2.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure21-wrap:hover .Treasure21_Aperçu {
+                    display: block;
+                }
+
+            .Treasure23-wrap img {
+                    display: block;
+                }
+
+            .Treasure23_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/69.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure23-wrap:hover .Treasure23_Aperçu {
+                    display: block;
+                }
+
+            .Treasure24-wrap img {
+                    display: block;
+                }
+
+            .Treasure24_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/106.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure24-wrap:hover .Treasure24_Aperçu {
+                    display: block;
+                }
+
+            .Treasure25-wrap img {
+                    display: block;
+                }
+
+            .Treasure25_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/84.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure25-wrap:hover .Treasure25_Aperçu {
+                    display: block;
+                }
+
+            .Treasure26-wrap img {
+                    display: block;
+                }
+
+            .Treasure26_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/104.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure26-wrap:hover .Treasure26_Aperçu {
+                    display: block;
+                }
+
+            .Treasure27-wrap img {
+                    display: block;
+                }
+
+            .Treasure27_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/57.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure27-wrap:hover .Treasure27_Aperçu {
+                    display: block;
+                }
+
+            .Treasure29-wrap img {
+                    display: block;
+                }
+
+            .Treasure29_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/88.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure29-wrap:hover .Treasure29_Aperçu {
+                    display: block;
+                }
+
+            .Treasure31-wrap img {
+                    display: block;
+                }
+
+            .Treasure31_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/60.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure31-wrap:hover .Treasure31_Aperçu {
+                    display: block;
+                }
+
+            .Treasure36-wrap img {
+                    display: block;
+                }
+
+            .Treasure36_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/34.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure36-wrap:hover .Treasure36_Aperçu {
+                    display: block;
+                }
+
+            .Treasure37-wrap img {
+                    display: block;
+                }
+
+            .Treasure37_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/30.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure37-wrap:hover .Treasure37_Aperçu {
+                    display: block;
+                }
+
+            .Treasure39-wrap img {
+                    display: block;
+                }
+
+            .Treasure39_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/70.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure39-wrap:hover .Treasure39_Aperçu {
+                    display: block;
+                }
+
+            .Treasure41-wrap img {
+                    display: block;
+                }
+
+            .Treasure41_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/26.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure41-wrap:hover .Treasure41_Aperçu {
+                    display: block;
+                }
+
+            .Treasure42-wrap img {
+                    display: block;
+                }
+
+            .Treasure42_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/25.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure42-wrap:hover .Treasure42_Aperçu {
+                    display: block;
+                }
+
+            .Treasure43-wrap img {
+                    display: block;
+                }
+
+            .Treasure43_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/29.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure43-wrap:hover .Treasure43_Aperçu {
+                    display: block;
+                }
+
+            .Treasure45-wrap img {
+                    display: block;
+                }
+
+            .Treasure45_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/20.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure45-wrap:hover .Treasure45_Aperçu {
+                    display: block;
+                }
+
+            .Treasure47-wrap img {
+                    display: block;
+                }
+
+            .Treasure47_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/77.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure47-wrap:hover .Treasure47_Aperçu {
+                    display: block;
+                }
+
+            .Treasure49-wrap img {
+                    display: block;
+                }
+
+            .Treasure49_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/46.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure49-wrap:hover .Treasure49_Aperçu {
+                    display: block;
+                }
+
+            .Treasure56-wrap img {
+                    display: block;
+                }
+
+            .Treasure56_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/95.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure56-wrap:hover .Treasure56_Aperçu {
+                    display: block;
+                }
+
+            .Treasure57-wrap img {
+                    display: block;
+                }
+
+            .Treasure57_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/14.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure57-wrap:hover .Treasure57_Aperçu {
+                    display: block;
+                }
+
+            .Treasure58-wrap img {
+                    display: block;
+                }
+
+            .Treasure58_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/107.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure58-wrap:hover .Treasure58_Aperçu {
+                    display: block;
+                }
+
+            .Treasure59-wrap img {
+                    display: block;
+                }
+
+            .Treasure59_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/99.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure59-wrap:hover .Treasure59_Aperçu {
+                    display: block;
+                }
+
+            .Treasure60-wrap img {
+                    display: block;
+                }
+
+            .Treasure60_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/15.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure60-wrap:hover .Treasure60_Aperçu {
+                    display: block;
+                }
+
+            .Treasure61-wrap img {
+                    display: block;
+                }
+
+            .Treasure61_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/55.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure61-wrap:hover .Treasure61_Aperçu {
+                    display: block;
+                }
+
+            .Treasure62-wrap img {
+                    display: block;
+                }
+
+            .Treasure62_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/71.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure62-wrap:hover .Treasure62_Aperçu {
+                    display: block;
+                }
+
+            .Treasure63-wrap img {
+                    display: block;
+                }
+
+            .Treasure63_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/92.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure63-wrap:hover .Treasure63_Aperçu {
+                    display: block;
+                }
+
+            .Treasure64-wrap img {
+                    display: block;
+                }
+
+            .Treasure64_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/5.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure64-wrap:hover .Treasure64_Aperçu {
+                    display: block;
+                }
+
+            .Treasure65-wrap img {
+                    display: block;
+                }
+
+            .Treasure65_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/1.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure65-wrap:hover .Treasure65_Aperçu {
+                    display: block;
+                }
+
+            .Treasure66-wrap img {
+                    display: block;
+                }
+
+            .Treasure66_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/12.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure66-wrap:hover .Treasure66_Aperçu {
+                    display: block;
+                }
+
+            .Treasure67-wrap img {
+                    display: block;
+                }
+
+            .Treasure67_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/82.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure67-wrap:hover .Treasure67_Aperçu {
+                    display: block;
+                }
+
+            .Treasure68-wrap img {
+                    display: block;
+                }
+
+            .Treasure68_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/23.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure68-wrap:hover .Treasure68_Aperçu {
+                    display: block;
+                }
+
+            .Treasure69-wrap img {
+                    display: block;
+                }
+
+            .Treasure69_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/45.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure69-wrap:hover .Treasure69_Aperçu {
+                    display: block;
+                }
+
+            .Treasure72-wrap img {
+                    display: block;
+                }
+
+            .Treasure72_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/59.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure72-wrap:hover .Treasure72_Aperçu {
+                    display: block;
+                }
+
+            .Treasure73-wrap img {
+                    display: block;
+                }
+
+            .Treasure73_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/63.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure73-wrap:hover .Treasure73_Aperçu {
+                    display: block;
+                }
+
+            .Treasure74-wrap img {
+                    display: block;
+                }
+
+            .Treasure74_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/51.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure74-wrap:hover .Treasure74_Aperçu {
+                    display: block;
+                }
+
+            .Treasure75-wrap img {
+                    display: block;
+                }
+
+            .Treasure75_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/87.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure75-wrap:hover .Treasure75_Aperçu {
+                    display: block;
+                }
+
+            .Treasure78-wrap img {
+                    display: block;
+                }
+
+            .Treasure78_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/81.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure78-wrap:hover .Treasure78_Aperçu {
+                    display: block;
+                }
+
+            .Treasure81-wrap img {
+                    display: block;
+                }
+
+            .Treasure81_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/78.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure81-wrap:hover .Treasure81_Aperçu {
+                    display: block;
+                }
+
+            .Treasure84-wrap img {
+                    display: block;
+                }
+
+            .Treasure84_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/53.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure84-wrap:hover .Treasure84_Aperçu {
+                    display: block;
+                }
+
+            .Treasure85-wrap img {
+                    display: block;
+                }
+
+            .Treasure85_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/7.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure85-wrap:hover .Treasure85_Aperçu {
+                    display: block;
+                }
+
+            .Treasure86-wrap img {
+                    display: block;
+                }
+
+            .Treasure86_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/76.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure86-wrap:hover .Treasure86_Aperçu {
+                    display: block;
+                }
+
+            .Treasure88-wrap img {
+                    display: block;
+                }
+
+            .Treasure88_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/80.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure88-wrap:hover .Treasure88_Aperçu {
+                    display: block;
+                }
+
+            .Treasure90-wrap img {
+                    display: block;
+                }
+
+            .Treasure90_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/96.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure90-wrap:hover .Treasure90_Aperçu {
+                    display: block;
+                }
+
+            .Treasure92-wrap img {
+                    display: block;
+                }
+
+            .Treasure92_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/68.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure92-wrap:hover .Treasure92_Aperçu {
+                    display: block;
+                }
+
+            .Treasure93-wrap img {
+                    display: block;
+                }
+
+            .Treasure93_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/11.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure93-wrap:hover .Treasure93_Aperçu {
+                    display: block;
+                }
+
+            .Treasure94-wrap img {
+                    display: block;
+                }
+
+            .Treasure94_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/8.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure94-wrap:hover .Treasure94_Aperçu {
+                    display: block;
+                }
+
+            .Treasure97-wrap img {
+                    display: block;
+                }
+
+            .Treasure97_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/9.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure97-wrap:hover .Treasure97_Aperçu {
+                    display: block;
+                }
+
+            .Treasure99-wrap img {
+                    display: block;
+                }
+
+            .Treasure99_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/64.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure99-wrap:hover .Treasure99_Aperçu {
+                    display: block;
+                }
+
+            .Treasure100-wrap img {
+                    display: block;
+                }
+
+            .Treasure100_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/118.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure100-wrap:hover .Treasure100_Aperçu {
+                    display: block;
+                }
+
+            .Treasure102-wrap img {
+                    display: block;
+                }
+
+            .Treasure102_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/28.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure102-wrap:hover .Treasure102_Aperçu {
+                    display: block;
+                }
+
+            .Treasure104-wrap img {
+                    display: block;
+                }
+
+            .Treasure104_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/122.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure104-wrap:hover .Treasure104_Aperçu {
+                    display: block;
+                }
+
+            .Treasure106-wrap img {
+                    display: block;
+                }
+
+            .Treasure106_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/47.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure106-wrap:hover .Treasure106_Aperçu {
+                    display: block;
+                }
+
+            .Treasure107-wrap img {
+                    display: block;
+                }
+
+            .Treasure107_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/21.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure107-wrap:hover .Treasure107_Aperçu {
+                    display: block;
+                }
+
+            .Treasure109-wrap img {
+                    display: block;
+                }
+
+            .Treasure109_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/61.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure109-wrap:hover .Treasure109_Aperçu {
+                    display: block;
+                }
+
+            .Treasure110-wrap img {
+                    display: block;
+                }
+
+            .Treasure110_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/90.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure110-wrap:hover .Treasure110_Aperçu {
+                    display: block;
+                }
+
+            .Treasure111-wrap img {
+                    display: block;
+                }
+
+            .Treasure111_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/42.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure111-wrap:hover .Treasure111_Aperçu {
+                    display: block;
+                }
+
+            .Treasure112-wrap img {
+                    display: block;
+                }
+
+            .Treasure112_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/24.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure112-wrap:hover .Treasure112_Aperçu {
+                    display: block;
+                }
+
+            .Treasure114-wrap img {
+                    display: block;
+                }
+
+            .Treasure114_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/39.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure114-wrap:hover .Treasure114_Aperçu {
+                    display: block;
+                }
+
+            .Treasure118-wrap img {
+                    display: block;
+                }
+
+            .Treasure118_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/94.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure118-wrap:hover .Treasure118_Aperçu {
+                    display: block;
+                }
+
+            .Treasure120-wrap img {
+                    display: block;
+                }
+
+            .Treasure120_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Treasure_sites/10.jpg');
+                    background-size: 201px 134px;
+                }
+
+            .Treasure120-wrap:hover .Treasure120_Aperçu {
+                    display: block;
+                }
+
+        </style>
+
+
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------------------------------------Quests--------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<div id="Quest1" class="Quest1-wrap" style="position: absolute; left: 81.4974213699426%; top: 17.6264893926184%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimensionné.png" draggable="false" title=""/><a class="Quest1_Aperçu" href="#"></a></div>
+<div id="Quest2" class="Quest2-wrap" style="position: absolute; left: 70.3748093266507%; top: 28.6062191223482%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimensionné.png" draggable="false" title=""/><a class="Quest2_Aperçu" href="#"></a></div>
+<div id="Quest3" class="Quest3-wrap" style="position: absolute; left: 58.8799302680323%; top: 62.5014890680613%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimensionné.png" draggable="false" title=""/><a class="Quest3_Aperçu" href="#"></a></div>
+<div id="Quest4" class="Quest4-wrap" style="position: absolute; left: 55.4387302970872%; top: 86.8078012638919%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimensionné.png" draggable="false" title=""/><a class="Quest4_Aperçu" href="#"></a></div>
+<div id="Quest5" class="Quest5-wrap" style="position: absolute; left: 53.9405825524806%; top: 80.4429432701387%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimensionné.png" draggable="false" title=""/><a class="Quest5_Aperçu" href="#"></a></div>
+<div id="Quest6" class="Quest6-wrap" style="position: absolute; left: 51.2166775622866%; top: 85.6365221181085%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimensionné.png" draggable="false" title=""/><a class="Quest6_Aperçu" href="#"></a></div>
+<div id="Quest7" class="Quest7-wrap" style="position: absolute; left: 29.6788724208079%; top: 56.1275513910075%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimensionné.png" draggable="false" title=""/><a class="Quest7_Aperçu" href="#"></a></div>
+<div id="Quest8" class="Quest8-wrap" style="position: absolute; left: 13.4499418773612%; top: 81.4598677998111%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimensionné.png" draggable="false" title=""/><a class="Quest8_Aperçu" href="#"></a></div>
+<div id="Quest9" class="Quest9-wrap" style="position: absolute; left: 11.1250363266492%; top: 93.4632091232658%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimensionné.png" draggable="false" title=""/><a class="Quest9_Aperçu" href="#"></a></div>
+<div id="Quest10" class="Quest10-wrap" style="position: absolute; left: 10.1442167974426%; top: 2.94144144144144%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimensionné.png" draggable="false" title=""/><a class="Quest10_Aperçu" href="#"></a></div>
+<div id="Quest11" class="Quest11-wrap" style="position: absolute; left: 67.7689402193651%; top: 70.8911164378587%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimensionné.png" draggable="false" title=""/><a class="Quest11_Aperçu" href="#"></a></div>
+<div id="Quest12" class="Quest12-wrap" style="position: absolute; left: 60.8320621776713%; top: 46.4970938680616%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimensionné.png" draggable="false" title=""/><a class="Quest12_Aperçu" href="#"></a></div>
+<div id="Quest13" class="Quest13-wrap" style="position: absolute; left: 49.8583260680035%; top: 48.8219994187736%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimensionné.png" draggable="false" title=""/><a class="Quest13_Aperçu" href="#"></a></div>
+<div id="Quest14" class="Quest14-wrap" style="position: absolute; left: 47.5515838419064%; top: 74.7045834241302%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimensionné.png" draggable="false" title=""/><a class="Quest14_Aperçu" href="#"></a></div>
+<div id="Quest15" class="Quest15-wrap" style="position: absolute; left: 34.9734815460622%; top: 57.9616474177381%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimensionné.png" draggable="false" title=""/><a class="Quest15_Aperçu" href="#"></a></div>
+<div id="Quest16" class="Quest16-wrap" style="position: absolute; left: 18.8172043010753%; top: 22.8756902063354%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimensionné.png" draggable="false" title=""/><a class="Quest16_Aperçu" href="#"></a></div>
+<div id="Quest17" class="Quest17-wrap" style="position: absolute; left: 13.5135135135135%; top: 18.4347573379831%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimensionné.png" draggable="false" title=""/><a class="Quest17_Aperçu" href="#"></a></div>
+<div id="Quest18" class="Quest18-wrap" style="position: absolute; left: 68.2683228009007%; top: 74.2687586256991%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimensionné.png" draggable="false" title=""/><a class="Quest18_Aperçu" href="#"></a></div>
+<div id="Quest19" class="Quest19-wrap" style="position: absolute; left: 68.4953148834169%; top: 14.5296425457716%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimensionné.png" draggable="false" title=""/><a class="Quest19_Aperçu" href="#"></a></div>
+<div id="Quest20" class="Quest20-wrap" style="position: absolute; left: 85.4834023389264%; top: 70.6278056221399%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimensionné.png" draggable="false" title=""/><a class="Quest20_Aperçu" href="#"></a></div>
+<div id="Quest21" class="Quest21-wrap" style="position: absolute; left: 70.8832715914869%; top: 85.3187332025859%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimensionné.png" draggable="false" title=""/><a class="Quest21_Aperçu" href="#"></a></div>
+<div id="Quest22" class="Quest22-wrap" style="position: absolute; left: 58.3351492699935%; top: 72.8432483474976%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimensionné.png" draggable="false" title=""/><a class="Quest22_Aperçu" href="#"></a></div>
+<div id="Quest23" class="Quest23-wrap" style="position: absolute; left: 68.0322510350839%; top: 74.5774678579211%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimensionné.png" draggable="false" title=""/><a class="Quest23_Aperçu" href="#"></a></div>
+
+<!--------Quests CSS/Hover------->
+
+        <style>
+
+            .Exclamation{
+            width: 7.8px;
+            height: auto;
+            transition: transform .1s;
+            }
+            
+            .Exclamation:hover{
+            -ms-transform: scale(1.5); /* IE 9 */
+            -webkit-transform: scale(1.5); /* Safari 3-8 */
+            transform: scale(1.5); 
+            }
+
+/* Do not delete .Exclamation & .Exclamation:hover */
+
+            .Quest1-wrap img {
+                display: block;
+            }
+
+            .Quest1_Aperçu {
+                z-index: 2;
+                display: none;
+                width: 201px;
+                height: 134px;
+                position: absolute;
+                bottom: 50px;
+                left: -90px;
+                border-radius: 10px;        
+                background: url('Screenshots/Quests/1.jpg');
+                background-size: 201px 134px;
+            }
+
+            .Quest1-wrap:hover .Quest1_Aperçu {
+                display: block;
+            }
+
+            .Quest3-wrap img {
+                display: block;
+            }
+
+            .Quest3_Aperçu {
+                z-index: 2;
+                display: none;
+                width: 201px;
+                height: 134px;
+                position: absolute;
+                bottom: 50px;
+                left: -90px;
+                border-radius: 10px;        
+                background: url('Screenshots/Quests/3.jpg');
+                background-size: 201px 134px;
+            }
+
+            .Quest3-wrap:hover .Quest3_Aperçu {
+                display: block;
+            }
+
+            .Quest6-wrap img {
+                display: block;
+            }
+
+            .Quest6_Aperçu {
+                z-index: 2;
+                display: none;
+                width: 201px;
+                height: 134px;
+                position: absolute;
+                bottom: 50px;
+                left: -90px;
+                border-radius: 10px;        
+                background: url('Screenshots/Quests/6.jpg');
+                background-size: 201px 134px;
+            }
+
+            .Quest6-wrap:hover .Quest6_Aperçu {
+                display: block;
+            }
+
+            .Quest7-wrap img {
+                display: block;
+            }
+
+            .Quest7_Aperçu {
+                z-index: 2;
+                display: none;
+                width: 201px;
+                height: 134px;
+                position: absolute;
+                bottom: 50px;
+                left: -90px;
+                border-radius: 10px;        
+                background: url('Screenshots/Quests/7.jpg');
+                background-size: 201px 134px;
+            }
+
+            .Quest7-wrap:hover .Quest7_Aperçu {
+                display: block;
+            }
+
+            .Quest8-wrap img {
+                display: block;
+            }
+
+            .Quest8_Aperçu {
+                z-index: 2;
+                display: none;
+                width: 201px;
+                height: 134px;
+                position: absolute;
+                bottom: 50px;
+                left: -90px;
+                border-radius: 10px;        
+                background: url('Screenshots/Quests/8.jpg');
+                background-size: 201px 134px;
+            }
+
+            .Quest8-wrap:hover .Quest8_Aperçu {
+                display: block;
+            }
+
+            .Quest15-wrap img {
+                display: block;
+            }
+
+            .Quest15_Aperçu {
+                z-index: 2;
+                display: none;
+                width: 201px;
+                height: 134px;
+                position: absolute;
+                bottom: 50px;
+                left: -90px;
+                border-radius: 10px;        
+                background: url('Screenshots/Quests/15.jpg');
+                background-size: 201px 134px;
+            }
+
+            .Quest15-wrap:hover .Quest15_Aperçu {
+                display: block;
+            }
+
+            .Quest17-wrap img {
+                display: block;
+            }
+
+            .Quest17_Aperçu {
+                z-index: 2;
+                display: none;
+                width: 201px;
+                height: 134px;
+                position: absolute;
+                bottom: 50px;
+                left: -90px;
+                border-radius: 10px;        
+                background: url('Screenshots/Quests/17.jpg');
+                background-size: 201px 134px;
+            }
+
+            .Quest17-wrap:hover .Quest17_Aperçu {
+                display: block;
+            }
+
+            .Quest19-wrap img {
+                display: block;
+            }
+
+            .Quest19_Aperçu {
+                z-index: 2;
+                display: none;
+                width: 201px;
+                height: 134px;
+                position: absolute;
+                bottom: 50px;
+                left: -90px;
+                border-radius: 10px;        
+                background: url('Screenshots/Quests/19.jpg');
+                background-size: 201px 134px;
+            }
+
+            .Quest19-wrap:hover .Quest19_Aperçu {
+                display: block;
+            }
+
+            .Quest20-wrap img {
+                display: block;
+            }
+
+            .Quest20_Aperçu {
+                z-index: 2;
+                display: none;
+                width: 201px;
+                height: 134px;
+                position: absolute;
+                bottom: 50px;
+                left: -90px;
+                border-radius: 10px;        
+                background: url('Screenshots/Quests/20.jpg');
+                background-size: 201px 134px;
+            }
+
+            .Quest20-wrap:hover .Quest20_Aperçu {
+                display: block;
+            }
+
+            .Quest21-wrap img {
+                display: block;
+            }
+
+            .Quest21_Aperçu {
+                z-index: 2;
+                display: none;
+                width: 201px;
+                height: 134px;
+                position: absolute;
+                bottom: 50px;
+                left: -90px;
+                border-radius: 10px;        
+                background: url('Screenshots/Quests/21.jpg');
+                background-size: 201px 134px;
+            }
+
+            .Quest21-wrap:hover .Quest21_Aperçu {
+                display: block;
+            }
+
+            .Quest22-wrap img {
+                display: block;
+            }
+
+            .Quest22_Aperçu {
+                z-index: 2;
+                display: none;
+                width: 201px;
+                height: 134px;
+                position: absolute;
+                bottom: 50px;
+                left: -90px;
+                border-radius: 10px;        
+                background: url('Screenshots/Quests/22.jpg');
+                background-size: 201px 134px;
+            }
+
+            .Quest22-wrap:hover .Quest22_Aperçu {
+                display: block;
+            }
+
+            .Quest23-wrap img {
+                display: block;
+            }
+
+            .Quest23_Aperçu {
+                z-index: 2;
+                display: none;
+                width: 201px;
+                height: 134px;
+                position: absolute;
+                bottom: 50px;
+                left: -90px;
+                border-radius: 10px;        
+                background: url('Screenshots/Quests/23.jpg');
+                background-size: 201px 134px;
+            }
+
+            .Quest23-wrap:hover .Quest23_Aperçu {
+                display: block;
+            }
+
+        </style>
+
+
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------------------Spawners Links----------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<div id="Spawner1" class="Spawner1-wrap" style="position: absolute; left: 34.0834786399303%; top: 77.174257281906%; width: 25px; height: auto; display: inline-block;"><img class="Spawner" src="Icons/Spawner.png" draggable="false" title=""/><a class="Spawner1_Aperçu" href="#"></a></div>
+<div id="Spawner2" class="Spawner2-wrap" style="position: absolute; left: 7.75573961057832%; top: 34.4911362975879%; width: 25px; height: auto; display: inline-block;"><img class="Spawner" src="Icons/Spawner.png" draggable="false" title=""/><a class="Spawner2_Aperçu" href="#"></a></div>
+
+<!--------Spawners CSS/Hover------->
+
+        <style>
+
+            .Spawner{
+            width: 25px;
+            height: auto;
+            transition: transform .1s;
+            }
+            
+            .Spawner:hover{
+            -ms-transform: scale(1.5); /* IE 9 */
+            -webkit-transform: scale(1.5); /* Safari 3-8 */
+            transform: scale(1.5); 
+            }
+
+/* Do not delete .Spawner & .Spawner:hover */
+
+            
+
+
+
+
+        </style>
+
+
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------Shipwrecks Links---------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<div id="Shipwreck1" class="Shipwreck1-wrap" style="position: absolute; left: 95.9522771845718%; top: 40.6575850043592%; width: 25px; height: auto; display: inline-block;"><img class="Shipwreck" src="Icons/Shipwreck_Oak.png" draggable="false" title=""/><a class="Shipwreck1_Aperçu" href="#"></a></div>
+<div id="Shipwreck2" class="Shipwreck2-wrap" style="position: absolute; left: 90.3864313212755%; top: 95.9782813975449%; width: 25px; height: auto; display: inline-block;"><img class="Shipwreck" src="Icons/Shipwreck_Oak.png" draggable="false" title=""/><a class="Shipwreck2_Aperçu" href="#"></a></div>
+<div id="Shipwreck3" class="Shipwreck3-wrap" style="position: absolute; left: 71.3100167066173%; top: 31.703065969195%; width: 25px; height: auto; display: inline-block;"><img class="Shipwreck" src="Icons/Shipwreck_Oak.png" draggable="false" title=""/><a class="Shipwreck3_Aperçu" href="#"></a></div>
+<div id="Shipwreck4" class="Shipwreck4-wrap" style="position: absolute; left: 66.6612188566863%; top: 11.7143272304563%; width: 25px; height: auto; display: inline-block;"><img class="Shipwreck" src="Icons/Shipwreck_Oak.png" draggable="false" title=""/><a class="Shipwreck4_Aperçu" href="#"></a></div>
+<div id="Shipwreck5" class="Shipwreck5-wrap" style="position: absolute; left: 65.58981622721%; top: 26.3267218831735%; width: 25px; height: auto; display: inline-block;"><img class="Shipwreck" src="Icons/Shipwreck_Oak.png" draggable="false" title=""/><a class="Shipwreck5_Aperçu" href="#"></a></div>
+<div id="Shipwreck6" class="Shipwreck6-wrap" style="position: absolute; left: 51.7705382436261%; top: 96.232512529963%; width: 25px; height: auto; display: inline-block;"><img class="Shipwreck" src="Icons/Shipwreck_Oak.png" draggable="false" title=""/><a class="Shipwreck6_Aperçu" href="#"></a></div>
+<div id="Shipwreck7" class="Shipwreck7-wrap" style="position: absolute; left: 41.8210549258936%; top: 27.5618279569892%; width: 25px; height: auto; display: inline-block;"><img class="Shipwreck" src="Icons/Shipwreck_Oak.png" draggable="false" title=""/><a class="Shipwreck7_Aperçu" href="#"></a></div>
+<div id="Shipwreck8" class="Shipwreck8-wrap" style="position: absolute; left: 23.6758936355711%; top: 32.5385789014821%; width: 25px; height: auto; display: inline-block;"><img class="Shipwreck" src="Icons/Shipwreck_Oak.png" draggable="false" title=""/><a class="Shipwreck8_Aperçu" href="#"></a></div>
+<div id="Shipwreck9" class="Shipwreck9-wrap" style="position: absolute; left: 19.8706771287416%; top: 32.5658238884045%; width: 25px; height: auto; display: inline-block;"><img class="Shipwreck" src="Icons/Shipwreck_Oak.png" draggable="false" title=""/><a class="Shipwreck9_Aperçu" href="#"></a></div>
+<div id="Shipwreck10" class="Shipwreck10-wrap" style="position: absolute; left: 15.3389276373147%; top: 32.6566405114792%; width: 25px; height: auto; display: inline-block;"><img class="Shipwreck" src="Icons/Shipwreck_Oak.png" draggable="false" title=""/><a class="Shipwreck10_Aperçu" href="#"></a></div>
+<div id="Shipwreck11" class="Shipwreck11-wrap" style="position: absolute; left: 44.7181052019762%; top: 47.0056669572799%; width: 25px; height: auto; display: inline-block;"><img class="Shipwreck" src="Icons/Shipwreck_Oak.png" draggable="false" title=""/><a class="Shipwreck11_Aperçu" href="#"></a></div>
+<div id="Shipwreck12" class="Shipwreck12-wrap" style="position: absolute; left: 13.1684103458297%; top: 92.9002687586257%; width: 25px; height: auto; display: inline-block;"><img class="Shipwreck" src="Icons/Shipwreck_Oak.png" draggable="false" title=""/><a class="Shipwreck12_Aperçu" href="#"></a></div>
+
+<!--------Shipwrecks CSS/Hover------->
+
+        <style>
+
+            .Shipwreck{
+            width: 25px;
+            height: auto;
+            transition: transform .1s;
+            }
+            
+            .Shipwreck:hover{
+            -ms-transform: scale(1.5); /* IE 9 */
+            -webkit-transform: scale(1.5); /* Safari 3-8 */
+            transform: scale(1.5); 
+            }
+
+/* Do not delete .Shipwreck & .Shipwreck:hover */
+
+            .Shipwreck11-wrap img {
+                display: block;
+            }
+
+            .Shipwreck11_Aperçu {
+                z-index: 2;
+                display: none;
+                width: 201px;
+                height: 134px;
+                position: absolute;
+                bottom: 50px;
+                left: -90px;
+                border-radius: 10px;        
+                background: url('Screenshots/Shipwrecks/11.jpg');
+                background-size: 201px 134px;
+            }
+
+            .Shipwreck11-wrap:hover .Shipwreck11_Aperçu {
+                display: block;
+            }
+
+            .Shipwreck12-wrap img {
+                display: block;
+            }
+
+            .Shipwreck12_Aperçu {
+                z-index: 2;
+                display: none;
+                width: 201px;
+                height: 134px;
+                position: absolute;
+                bottom: 50px;
+                left: -90px;
+                border-radius: 10px;        
+                background: url('Screenshots/Shipwrecks/12.jpg');
+                background-size: 201px 134px;
+            }
+
+            .Shipwreck12-wrap:hover .Shipwreck12_Aperçu {
+                display: block;
+            }
+
+        </style>
+
+
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------------------Fossils Links------------------------------------------------------------------------------------------------------------------------------------------------------>
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<div id="Fossil1" class="Fossil1-wrap" style="position: absolute; left: 92.247766397908%; top: 72.7161327812886%; width: 25px; height: auto; display: inline-block;"><img class="Fossil" src="Icons/Fossil_Spine_3.png" draggable="false" title=""/><a class="Fossil1_Aperçu" href="#"></a></div>
+<div id="Fossil2" class="Fossil2-wrap" style="position: absolute; left: 84.6389917919663%; top: 87.5795743444469%; width: 25px; height: auto; display: inline-block;"><img class="Fossil" src="Icons/Fossil_Spine_3.png" draggable="false" title=""/><a class="Fossil2_Aperçu" href="#"></a></div>
+<div id="Fossil3" class="Fossil3-wrap" style="position: absolute; left: 54.0222997021864%; top: 72.0987143168446%; width: 25px; height: auto; display: inline-block;"><img class="Fossil" src="Icons/Fossil_Spine_3.png" draggable="false" title=""/><a class="Fossil3_Aperçu" href="#"></a></div>
+<div id="Fossil4" class="Fossil4-wrap" style="position: absolute; left: 33.0481691368788%; top: 31.5395960476606%; width: 25px; height: auto; display: inline-block;"><img class="Fossil" src="Icons/Fossil_Spine_3.png" draggable="false" title=""/><a class="Fossil4_Aperçu" href="#"></a></div>
+<div id="Fossil5" class="Fossil5-wrap" style="position: absolute; left: 15.4388259226969%; top: 65.3434299411636%; width: 25px; height: auto; display: inline-block;"><img class="Fossil" src="Icons/Fossil_Spine_3.png" draggable="false" title=""/><a class="Fossil5_Aperçu" href="#"></a></div>
+
+<!--------Fossils CSS/Hover------->
+
+        <style>
+
+            .Fossil{
+            width: 25px;
+            height: auto;
+            transition: transform .1s;
+            }
+            
+            .Fossil:hover{
+            -ms-transform: scale(1.5); /* IE 9 */
+            -webkit-transform: scale(1.5); /* Safari 3-8 */
+            transform: scale(1.5); 
+            }
+
+/* Do not delete .Exclamation & .Exclamation:hover */
+    
+            .Fossil1-wrap img {
+                display: block;
+            }
+
+            .Fossil1_Aperçu {
+                z-index: 2;
+                display: none;
+                width: 201px;
+                height: 134px;
+                position: absolute;
+                bottom: 50px;
+                left: -90px;
+                border-radius: 10px;        
+                background: url('Screenshots/Fossils/1.jpg');
+                background-size: 201px 134px;
+            }
+
+            .Fossil1-wrap:hover .Fossil1_Aperçu {
+                display: block;
+            }
+
+            .Fossil2-wrap img {
+                display: block;
+            }
+
+            .Fossil2_Aperçu {
+                z-index: 2;
+                display: none;
+                width: 201px;
+                height: 134px;
+                position: absolute;
+                bottom: 50px;
+                left: -90px;
+                border-radius: 10px;        
+                background: url('Screenshots/Fossils/2.jpg');
+                background-size: 201px 134px;
+            }
+
+            .Fossil2-wrap:hover .Fossil2_Aperçu {
+                display: block;
+            }
+
+            .Fossil3-wrap img {
+                display: block;
+            }
+
+            .Fossil3_Aperçu {
+                z-index: 2;
+                display: none;
+                width: 201px;
+                height: 134px;
+                position: absolute;
+                bottom: 50px;
+                left: -90px;
+                border-radius: 10px;        
+                background: url('Screenshots/Fossils/3.jpg');
+                background-size: 201px 134px;
+            }
+
+            .Fossil3-wrap:hover .Fossil3_Aperçu {
+                display: block;
+            }
+
+            .Fossil4-wrap img {
+                display: block;
+            }
+
+            .Fossil4_Aperçu {
+                z-index: 2;
+                display: none;
+                width: 201px;
+                height: 134px;
+                position: absolute;
+                bottom: 50px;
+                left: -90px;
+                border-radius: 10px;        
+                background: url('Screenshots/Fossils/4.jpg');
+                background-size: 201px 134px;
+            }
+
+            .Fossil4-wrap:hover .Fossil4_Aperçu {
+                display: block;
+            }
+
+        </style>
+
+
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------------------Villages Links----------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<div id="Village1" class="Village1-wrap" style="position: absolute; left: 79.7359628096172%; top: 72.8069296142951%; width: 25px; height: auto; display: inline-block;"><img class="Village" src="Icons/Plains_Small_House.png" draggable="false" title=""/><a class="Village1_Aperçu" href="#"></a></div>
+<div id="Village2" class="Village2-wrap" style="position: absolute; left: 77.6113169172659%; top: 27.5255013077594%; width: 25px; height: auto; display: inline-block;"><img class="Village" src="Icons/Plains_Small_House.png" draggable="false" title=""/><a class="Village2_Aperçu" href="#"></a></div>
+<div id="Village3" class="Village3-wrap" style="position: absolute; left: 75.6864240575289%; top: 4.79410055216507%; width: 25px; height: auto; display: inline-block;"><img class="Village" src="Icons/Plains_Small_House.png" draggable="false" title=""/><a class="Village3_Aperçu" href="#"></a></div>
+<div id="Village4" class="Village4-wrap" style="position: absolute; left: 34.9462365591398%; top: 38.1056378959605%; width: 25px; height: auto; display: inline-block;"><img class="Village" src="Icons/Plains_Small_House.png" draggable="false" title=""/><a class="Village4_Aperçu" href="#"></a></div>
+<div id="Village5" class="Village5-wrap" style="position: absolute; left: 33.574905550712%; top: 10.9787125835513%; width: 25px; height: auto; display: inline-block;"><img class="Village" src="Icons/Plains_Small_House.png" draggable="false" title=""/><a class="Village5_Aperçu" href="#"></a></div>
+<div id="Village6" class="Village6-wrap" style="position: absolute; left: 32.8211275791921%; top: 20.8686428363848%; width: 25px; height: auto; display: inline-block;"><img class="Village" src="Icons/Plains_Small_House.png" draggable="false" title=""/><a class="Village6_Aperçu" href="#"></a></div>
+<div id="Village7" class="Village7-wrap" style="position: absolute; left: 18.444856146469%; top: 66.078884288516%; width: 25px; height: auto; display: inline-block;"><img class="Village" src="Icons/Plains_Small_House.png" draggable="false" title=""/><a class="Village7_Aperçu" href="#"></a></div>
+<div id="Village8" class="Village8-wrap" style="position: absolute; left: 82.3418319169027%; top: 10.5246294681779%; width: 25px; height: auto; display: inline-block;"><img class="Village" src="Icons/Plains_Small_House.png" draggable="false" title=""/><a class="Village8_Aperçu" href="#"></a></div>
+<div id="Village9" class="Village9-wrap" style="position: absolute; left: 83.7673421951042%; top: 15.4832170880558%; width: 25px; height: auto; display: inline-block;"><img class="Village" src="Icons/Plains_Small_House.png" draggable="false" title=""/><a class="Village9_Aperçu" href="#"></a></div>
+<div id="Village10" class="Village10-wrap" style="position: absolute; left: 9.01809067131648%; top: 80.3612261204329%; width: 25px; height: auto; display: inline-block;"><img class="Village" src="Icons/Plains_Small_House.png" draggable="false" title=""/><a class="Village10_Aperçu" href="#"></a></div>
+    
+<!--------Villages CSS/Hover------->
+
+        <style>
+
+            .Village{
+            width: 25px;
+            height: auto;
+            transition: transform .1s;
+            }
+            
+            .Village:hover{
+            -ms-transform: scale(1.5); /* IE 9 */
+            -webkit-transform: scale(1.5); /* Safari 3-8 */
+            transform: scale(1.5); 
+            }
+
+/* Do not delete .Village & .Village:hover */
+    
+            .Village3-wrap img {
+                display: block;
+            }
+
+            .Village3_Aperçu {
+                z-index: 2;
+                display: none;
+                width: 201px;
+                height: 134px;
+                position: absolute;
+                bottom: 50px;
+                left: -90px;
+                border-radius: 10px;        
+                background: url('Screenshots/Villages/3.jpg');
+                background-size: 201px 134px;
+            }
+
+            .Village3-wrap:hover .Village3_Aperçu {
+                display: block;
+            }
+
+            .Village8-wrap img {
+                display: block;
+            }
+
+            .Village8_Aperçu {
+                z-index: 2;
+                display: none;
+                width: 201px;
+                height: 134px;
+                position: absolute;
+                bottom: 50px;
+                left: -90px;
+                border-radius: 10px;        
+                background: url('Screenshots/Villages/8.jpg');
+                background-size: 201px 134px;
+            }
+
+            .Village8-wrap:hover .Village8_Aperçu {
+                display: block;
+            }
+
+            .Village9-wrap img {
+                display: block;
+            }
+
+            .Village9_Aperçu {
+                z-index: 2;
+                display: none;
+                width: 201px;
+                height: 134px;
+                position: absolute;
+                bottom: 50px;
+                left: -90px;
+                border-radius: 10px;        
+                background: url('Screenshots/Villages/9.jpg');
+                background-size: 201px 134px;
+            }
+
+            .Village9-wrap:hover .Village9_Aperçu {
+                display: block;
+            }
+
+            .Village10-wrap img {
+                display: block;
+            }
+
+            .Village10_Aperçu {
+                z-index: 2;
+                display: none;
+                width: 201px;
+                height: 134px;
+                position: absolute;
+                bottom: 50px;
+                left: -90px;
+                border-radius: 10px;        
+                background: url('Screenshots/Villages/10.jpg');
+                background-size: 201px 134px;
+            }
+
+            .Village10-wrap:hover .Village10_Aperçu {
+                display: block;
+            }
+
+        </style>
+
+
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-----------------------------------------------------------------------------------------------------------------------------Pillagers Outpost Links------------------------------------------------------------------------------------------------------------------------------------------------>
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<div id="Pillagers_Outpost1" class="Pillagers_Outpost1-wrap" style="position: absolute; left: 79.8630783758263%; top: 32.3206190061029%; width: 25px; height: auto; display: inline-block;"><img class="Pillagers_Outpost" src="Icons/Pillager_outpost_watchtower.png" draggable="false" title=""/><a class="Pillagers_Outpost1_Aperçu" href="#"></a></div>
+<div id="Pillagers_Outpost2" class="Pillagers_Outpost2-wrap" style="position: absolute; left: 17.9816913687881%; top: 17.7808776518454%; width: 25px; height: auto; display: inline-block;"><img class="Pillagers_Outpost" src="Icons/Pillager_outpost_watchtower.png" draggable="false" title=""/><a class="Pillagers_Outpost2_Aperçu" href="#"></a></div>
+
+<!--------Pillagers Outpost CSS/Hover------->
+
+        <style>
+
+            .Pillagers_Outpost{
+            width: 25px;
+            height: auto;
+            transition: transform .1s;
+            }
+            
+            .Pillagers_Outpost:hover{
+            -ms-transform: scale(1.5); /* IE 9 */
+            -webkit-transform: scale(1.5); /* Safari 3-8 */
+            transform: scale(1.5); 
+            }
+
+/* Do not delete .Pillagers_Outpost & .Pillagers_Outpost:hover */
+        
+            .Pillagers_Outpost2-wrap img {
+                display: block;
+            }
+
+            .Pillagers_Outpost2_Aperçu {
+                z-index: 2;
+                display: none;
+                width: 201px;
+                height: 134px;
+                position: absolute;
+                bottom: 50px;
+                left: -90px;
+                border-radius: 10px;        
+                background: url('Screenshots/Pillagers_outpost/2.jpg');
+                background-size: 201px 134px;
+            }
+
+            .Pillagers_Outpost2-wrap:hover .Pillagers_Outpost2_Aperçu {
+                display: block;
+            }
+
+
+        </style>
+
+
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------------------Mineshafts Links--------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<div id="Mineshaft1" class="Mineshaft1-wrap" style="position: absolute; left: 25.2470212147632%; top: 27.2893780877652%; width: 25px; height: auto; display: inline-block;"><img class="Mineshaft" src="Icons/Minecart.png" draggable="false" title=""/><a class="Mineshaft1_Aperçu" href="#"></a></div>
+<div id="Mineshaft2" class="Mineshaft2-wrap" style="position: absolute; left: 76.0496113895547%; top: 3.17756466143563%; width: 25px; height: auto; display: inline-block;"><img class="Mineshaft" src="Icons/Minecart.png" draggable="false" title=""/><a class="Mineshaft2_Aperçu" href="#"></a></div>
+<div id="Mineshaft3" class="Mineshaft3-wrap" style="position: absolute; left: 46.4072943911654%; top: 55.9005593084913%; width: 25px; height: auto; display: inline-block;"><img class="Mineshaft" src="Icons/Minecart.png" draggable="false" title=""/><a class="Mineshaft3_Aperçu" href="#"></a></div>
+<div id="Mineshaft4" class="Mineshaft4-wrap" style="position: absolute; left: 10.2259517582098%; top: 2.99593141528625%; width: 25px; height: auto; display: inline-block;"><img class="Mineshaft" src="Icons/Minecart.png" draggable="false" title=""/><a class="Mineshaft4_Aperçu" href="#"></a></div>
+<div id="Mineshaft5" class="Mineshaft5-wrap" style="position: absolute; left: 45.6898430688753%; top: 70.0921043074018%; width: 25px; height: auto; display: inline-block;"><img class="Mineshaft" src="Icons/Minecart.png" draggable="false" title=""/><a class="Mineshaft5_Aperçu" href="#"></a></div>
+<div id="Mineshaft6" class="Mineshaft6-wrap" style="position: absolute; left: 32.5940860215054%; top: 78.1730224449771%; width: 25px; height: auto; display: inline-block;"><img class="Mineshaft" src="Icons/Minecart.png" draggable="false" title=""/><a class="Mineshaft6_Aperçu" href="#"></a></div>
+<div id="Mineshaft7" class="Mineshaft7-wrap" style="position: absolute; left: 10.1442167974426%; top: 2.94144144144144%; width: 25px; height: auto; display: inline-block;"><img class="Mineshaft" src="Icons/Minecart.png" draggable="false" title=""/><a class="Mineshaft7_Aperçu" href="#"></a></div>
+
+<!--------Mineshafts CSS/Hover------->
+
+        <style>
+
+            .Mineshaft{
+            width: 25px;
+            height: auto;
+            transition: transform .1s;
+            }
+            
+            .Mineshaft:hover{
+            -ms-transform: scale(1.5); /* IE 9 */
+            -webkit-transform: scale(1.5); /* Safari 3-8 */
+            transform: scale(1.5); 
+            }
+
+/* Do not delete .Mineshaft & .Mineshaft:hover */
+          
+
+
+
+
+        </style>
+    
+
+      </div>
+    </div>
+
+
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------------MouseWheel Zoom Script-------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+    <script>
+        
+     $(document).ready(function (){
+    var scroll_zoom = new ScrollZoom($('#Container'),4,0.5)
+})
+ 
+//The parameters are:
+//
+//container: The wrapper of the element to be zoomed. The script will look for the first child of the container and apply the transforms to it.
+//max_scale: The maximum scale (4 = 400% zoom)
+//factor: The zoom-speed (1 = +100% zoom per mouse wheel tick)
+ 
+function ScrollZoom(container,max_scale,factor){
+    var target = container.children().first()
+    var size = {w:target.width(),h:target.height()}
+    var pos = {x:0,y:0}
+    var scale = 1
+    var zoom_target = {x:0,y:0}
+    var zoom_point = {x:0,y:0}
+    var curr_tranform = target.css('transition')
+    var last_mouse_position = { x:0, y:0 }
+    var drag_started = 0
+ 
+    target.css('transform-origin','0 0')
+    target.on("mousewheel DOMMouseScroll",scrolled)
+    target.on('mousemove', moved)
+    target.on('mousedown', function() {
+        drag_started = 1;
+        target.css({'cursor':'move', 'transition': 'transform 0s'});
+        /* Save mouse position */
+        last_mouse_position = { x: event.pageX, y: event.pageY};
+    });
+ 
+    target.on('mouseup mouseout', function() {
+        drag_started = 0;
+        target.css({'cursor':'default', 'transition': curr_tranform});
+    });
+ 
+    function scrolled(e){
+        var offset = container.offset()
+        zoom_point.x = e.pageX - offset.left
+        zoom_point.y = e.pageY - offset.top
+ 
+        e.preventDefault();
+        var delta = e.delta || e.originalEvent.wheelDelta;
+        if (delta === undefined) {
+          //we are on firefox
+          delta = e.originalEvent.detail;
+        }
+        delta = Math.max(-1,Math.min(1,delta)) // cap the delta to [-1,1] for cross browser consistency
+ 
+        // determine the point on where the slide is zoomed in
+        zoom_target.x = (zoom_point.x - pos.x)/scale
+        zoom_target.y = (zoom_point.y - pos.y)/scale
+ 
+        // apply zoom
+        scale += delta * factor * scale
+        scale = Math.max(1,Math.min(max_scale,scale))
+ 
+        // calculate x and y based on zoom
+        pos.x = -zoom_target.x * scale + zoom_point.x
+        pos.y = -zoom_target.y * scale + zoom_point.y
+ 
+        update()
+    }
+ 
+    function moved(event){
+        if(drag_started == 1) {
+            var current_mouse_position = { x: event.pageX, y: event.pageY};
+            var change_x = current_mouse_position.x - last_mouse_position.x;
+            var change_y = current_mouse_position.y - last_mouse_position.y;
+ 
+            /* Save mouse position */
+            last_mouse_position = current_mouse_position;
+            //Add the position change
+            pos.x += change_x;
+            pos.y += change_y;
+ 
+        update()
+        }
+    }
+ 
+    function update(){
+        // Make sure the slide stays in its container area when zooming out
+        if(pos.x>0)
+            pos.x = 0
+        if(pos.x+size.w*scale<size.w)
+            pos.x = -size.w*(scale-1)
+        if(pos.y>0)
+            pos.y = 0
+        if(pos.y+size.h*scale<size.h)
+            pos.y = -size.h*(scale-1)
+ 
+        target.css('transform','translate('+(pos.x)+'px,'+(pos.y)+'px) scale('+scale+','+scale+')')
+    }
+}
+
+    </script>
+
+
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------------------------------Mouse Drag Script---------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+    <script>
+    
+    let _startX = 0,
+        _startY = 0,
+        _scrollTop = 0,
+        _scrollLeft = 0;
+    
+    document.onmousedown = OnMouseDown;
+    document.onmouseup = OnMouseUp;
+    
+    function OnMouseDown(event) {
+        document.onmousemove = OnMouseMove;
+        _startX = event.clientX;
+        _startY = event.clientY;
+        _scrollTop = document.documentElement.scrollTop;
+        _scrollLeft = document.documentElement.scrollLeft;
+    }
+    
+    function OnMouseMove(event) {
+        window.scrollTo({
+            left: _scrollLeft + (_startX - event.clientX),
+            top: _scrollTop + (_startY - event.clientY)
+        });
+    }
+    
+    function OnMouseUp() {
+        document.onmousemove = null;
+    }
+    
+    </script>
+
+<!---->
+</body>
+
+</html>
