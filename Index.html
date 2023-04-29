@@ -2545,6 +2545,7 @@ border-radius: 0 0 0 75%;
 
 <div id="Spawner1" class="Spawner1-wrap" style="position: absolute; left: 34.0834786399303%; top: 77.174257281906%; width: 25px; height: auto; display: inline-block;"><img class="Spawner" src="Icons/Spawner.png" draggable="false" title=""/><a class="Spawner1_Aperçu" href="#"></a></div>
 <div id="Spawner2" class="Spawner2-wrap" style="position: absolute; left: 7.75573961057832%; top: 34.4911362975879%; width: 25px; height: auto; display: inline-block;"><img class="Spawner" src="Icons/Spawner.png" draggable="false" title=""/><a class="Spawner2_Aperçu" href="#"></a></div>
+<div id="Spawner3" class="Spawner3-wrap" style="position: absolute; left: 93.1648144112733%; top: 57.1353962373792%; width: 25px; height: auto; display: inline-block;"><img class="Spawner" src="Icons/Spawner.png" draggable="false" title=""/><a class="Spawner3_Aperçu" href="#"></a></div>
 
 <!--------Spawners CSS/Hover------->
 
@@ -2564,10 +2565,26 @@ border-radius: 0 0 0 75%;
 
 /* Do not delete .Spawner & .Spawner:hover */
 
-            
+            .Spawner3-wrap img {
+                    display: block;
+                }
 
+            .Spawner3_Aperçu {
+                    z-index: 2;
+                    display: none;
+                    width: 201px;
+                    height: 134px;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -90px;
+                    border-radius: 10px;        
+                    background: url('Screenshots/Spawners/3.jpg');
+                    background-size: 201px 134px;
+                }
 
-
+            .Spawner3-wrap:hover .Spawner3_Aperçu {
+                    display: block;
+                }
 
         </style>
 
