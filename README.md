@@ -19,6 +19,6 @@ Please, I'm doing the code on my own time instead of playing the game. The least
 Updates :
 
 
-03/05/2023 : added a subtitle for the treasures for more readability.
+03/05/2023: added a subtitle for treasures/quests for better readability. Added map transparency for better readability and corners in the menus.
 
 01/05/2023 : New interface menu with more possibility to filter chests.
