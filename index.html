@@ -374,7 +374,30 @@
 
 <img id= MineshaftImg src='Icons/Minecart.png' draggable="false" style="position: absolute; left: 64%; width: 60px; height: auto; z-index: 1">Mineshafts</a>   
 
-                    
+
+<!--------Nations Toggle------->
+
+<a href="#" onclick = "
+
+        Toggle('Nation1');
+        Toggle('Nation2');
+        Toggle('Nation3');
+        Toggle('Nation4');
+        Toggle('Nation5');
+        Toggle('Nation6');
+        Toggle('Nation7');
+        Toggle('Nation8');
+        Toggle('Nation9');
+        Toggle('Nation10');
+        Toggle('Nation11');
+
+        return false;
+
+">
+
+<img id= NationImg src='Icons/Nation.png' draggable="false" style="position: absolute; left: 64%; width: 55px; height: auto; z-index: 1">Nations</a>
+               
+
         </div>
 
     </div>
@@ -386,103 +409,105 @@
 
 <style>
 
-.Logo {
-    background-color: transparent; 
-    padding: 15px;
-    border: none;
-    cursor: pointer;
-}
+            .Logo {
+                background-color: transparent; 
+                padding: 15px;
+                border: none;
+                cursor: pointer;
+            }
 
-.LogoMenu {
-    position: fixed;
-    display: inline-block;
-    z-index: 1;
-    width: 200px;
-    height: 280px;
-}
+            .LogoMenu {
+                position: fixed;
+                display: inline-block;
+                z-index: 1;
+                width: 200px;
+                height: 280px;
+            }
 
-.LogoMenu-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    left: 0px;
-    width: 200px ;
-    height: auto;
-}
+            .LogoMenu-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                opacity: 0.95;            
+                border-radius: 5px;
+                left: 0px;
+                width: 200px ;
+                height: auto;
+            }
 
-.SubMenu .SubMenuRarete { 
-    text-decoration: none;
-    font-family: 'Trebuchet MS';
-    font-style: oblique;
-    text-indent: 5%;
-    color:orange;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 200px;
-    line-height: 65px;
-}
+            .SubMenu .SubMenuRarete { 
+                text-decoration: none;
+                font-family: 'Trebuchet MS';
+                font-style: oblique;
+                text-indent: 5%;
+                color:orange;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 200px;
+                line-height: 65px;
+            }
 
-.SubMenu-content {
-    display: none;
-    position: absolute;
-    left: 200px;
-    top: 0px;
-    background-color: #a1a0a0;
-    width: 100%;
-    z-index: 1;
-}
+            .SubMenu-content {
+                display: none;
+                position: absolute;
+                left: 200px;
+                top: 0px;
+                background-color: #a1a0a0;
+                border-radius: 5px;               
+                width: 100%;
+                z-index: 1;
+            }
 
-.SubMenu-content a {
+            .SubMenu-content a {
 
-    text-decoration: none;
-    font-family: 'Trebuchet MS';
-    font-style: oblique;
-    text-indent: 5%;
-    color:orange;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 200px;
-    line-height: 65px;
-}
+                text-decoration: none;
+                font-family: 'Trebuchet MS';
+                font-style: oblique;
+                text-indent: 5%;
+                color:orange;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 200px;
+                line-height: 65px;
+            }
 
-.SubMenu-content a:hover {
-    background-color: #eee;
-    color: black;
-}
+            .SubMenu-content a:hover {
+                background-color: #eee;
+                color: black;
+            }
 
-.SubMenu:hover .SubMenu-content {
-    display: block;
-}
+            .SubMenu:hover .SubMenu-content {
+                display: block;
+            }
 
-.LogoMenu-content a {
-    text-decoration: none;
-    font-family: 'Trebuchet MS';
-    font-style: oblique;
-    text-indent: 5%;
-    color:orange;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 200px;
-    line-height: 65px;
-}
+            .LogoMenu-content a {
+                text-decoration: none;
+                font-family: 'Trebuchet MS';
+                font-style: oblique;
+                text-indent: 5%;
+                color:orange;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 200px;
+                line-height: 65px;
+            }
 
-.LogoMenu-content a:hover {
+            .LogoMenu-content a:hover {
 
-    background-color: #d4d3d3;
-    color: white;
+                background-color: #d4d3d3;
+                color: white;
+            }
 
-}
+            .LogoMenu:hover .LogoMenu-content {
+                display: block;
+            }
 
-.LogoMenu:hover .LogoMenu-content {
-    display: block;
-}
-
-.LogoMenu:hover .Logo {
-    background-color: #535353;
-}
+            .LogoMenu:hover .Logo {
+                background-color: #535353;
+            }
 
 </style>
 
@@ -495,7 +520,7 @@
 
     <div id="Container">
       <div id="Map_Icons">
-        <img src="Icons/Jeracraft_full_world_map - Copie.jpg" alt="zoom" draggable="false">
+        <img src="Icons/Jeracraft_full_world_map - Copie.jpg" alt="zoom" draggable="false" style="opacity: 0.8;">
 
 <!--------------Map CSS-------------->
 
@@ -818,7 +843,7 @@
             white-space: nowrap;
             }
             
-/* Do not delete .Chest & .Chest:hover */
+/* Do not delete .Chest / .Chest:hover / .TreasureText */
 
             .Treasure1-wrap img {
                 display: block;
@@ -2610,29 +2635,29 @@
 <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
 
-<div id="Quest1" class="Quest1-wrap" style="position: absolute; left: 81.4974213699426%; top: 17.6264893926184%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimension.png" draggable="false" title=""/><a class="Quest1_Aperçu" href="#"></a></div>
-<div id="Quest2" class="Quest2-wrap" style="position: absolute; left: 70.3748093266507%; top: 28.6062191223482%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimension.png" draggable="false" title=""/><a class="Quest2_Aperçu" href="#"></a></div>
-<div id="Quest3" class="Quest3-wrap" style="position: absolute; left: 58.8799302680323%; top: 62.5014890680613%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimension.png" draggable="false" title=""/><a class="Quest3_Aperçu" href="#"></a></div>
-<div id="Quest4" class="Quest4-wrap" style="position: absolute; left: 55.4387302970872%; top: 86.8078012638919%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimension.png" draggable="false" title=""/><a class="Quest4_Aperçu" href="#"></a></div>
-<div id="Quest5" class="Quest5-wrap" style="position: absolute; left: 53.9405825524806%; top: 80.4429432701387%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimension.png" draggable="false" title=""/><a class="Quest5_Aperçu" href="#"></a></div>
-<div id="Quest6" class="Quest6-wrap" style="position: absolute; left: 51.2166775622866%; top: 85.6365221181085%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimension.png" draggable="false" title=""/><a class="Quest6_Aperçu" href="#"></a></div>
-<div id="Quest7" class="Quest7-wrap" style="position: absolute; left: 29.6788724208079%; top: 56.1275513910075%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimension.png" draggable="false" title=""/><a class="Quest7_Aperçu" href="#"></a></div>
-<div id="Quest8" class="Quest8-wrap" style="position: absolute; left: 13.4499418773612%; top: 81.4598677998111%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimension.png" draggable="false" title=""/><a class="Quest8_Aperçu" href="#"></a></div>
-<div id="Quest9" class="Quest9-wrap" style="position: absolute; left: 11.1250363266492%; top: 93.4632091232658%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimension.png" draggable="false" title=""/><a class="Quest9_Aperçu" href="#"></a></div>
-<div id="Quest10" class="Quest10-wrap" style="position: absolute; left: 10.1442167974426%; top: 2.94144144144144%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimension.png" draggable="false" title=""/><a class="Quest10_Aperçu" href="#"></a></div>
-<div id="Quest11" class="Quest11-wrap" style="position: absolute; left: 67.7689402193651%; top: 70.8911164378587%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimension.png" draggable="false" title=""/><a class="Quest11_Aperçu" href="#"></a></div>
-<div id="Quest12" class="Quest12-wrap" style="position: absolute; left: 60.8320621776713%; top: 46.4970938680616%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimension.png" draggable="false" title=""/><a class="Quest12_Aperçu" href="#"></a></div>
-<div id="Quest13" class="Quest13-wrap" style="position: absolute; left: 49.8583260680035%; top: 48.8219994187736%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimension.png" draggable="false" title=""/><a class="Quest13_Aperçu" href="#"></a></div>
-<div id="Quest14" class="Quest14-wrap" style="position: absolute; left: 47.5515838419064%; top: 74.7045834241302%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimension.png" draggable="false" title=""/><a class="Quest14_Aperçu" href="#"></a></div>
-<div id="Quest15" class="Quest15-wrap" style="position: absolute; left: 34.9734815460622%; top: 57.9616474177381%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimension.png" draggable="false" title=""/><a class="Quest15_Aperçu" href="#"></a></div>
-<div id="Quest16" class="Quest16-wrap" style="position: absolute; left: 18.8172043010753%; top: 22.8756902063354%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimension.png" draggable="false" title=""/><a class="Quest16_Aperçu" href="#"></a></div>
-<div id="Quest17" class="Quest17-wrap" style="position: absolute; left: 13.5135135135135%; top: 18.4347573379831%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimension.png" draggable="false" title=""/><a class="Quest17_Aperçu" href="#"></a></div>
-<div id="Quest18" class="Quest18-wrap" style="position: absolute; left: 68.2683228009007%; top: 74.2687586256991%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimension.png" draggable="false" title=""/><a class="Quest18_Aperçu" href="#"></a></div>
-<div id="Quest19" class="Quest19-wrap" style="position: absolute; left: 68.4953148834169%; top: 14.5296425457716%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimension.png" draggable="false" title=""/><a class="Quest19_Aperçu" href="#"></a></div>
-<div id="Quest20" class="Quest20-wrap" style="position: absolute; left: 85.4834023389264%; top: 70.6278056221399%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimension.png" draggable="false" title=""/><a class="Quest20_Aperçu" href="#"></a></div>
-<div id="Quest21" class="Quest21-wrap" style="position: absolute; left: 70.8832715914869%; top: 85.3187332025859%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimension.png" draggable="false" title=""/><a class="Quest21_Aperçu" href="#"></a></div>
-<div id="Quest22" class="Quest22-wrap" style="position: absolute; left: 58.3351492699935%; top: 72.8432483474976%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimension.png" draggable="false" title=""/><a class="Quest22_Aperçu" href="#"></a></div>
-<div id="Quest23" class="Quest23-wrap" style="position: absolute; left: 68.0322510350839%; top: 74.5774678579211%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimension.png" draggable="false" title=""/><a class="Quest23_Aperçu" href="#"></a></div>
+<div id="Quest1" class="Quest1-wrap" style="position: absolute; left: 81.4974213699426%; top: 17.6264893926184%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimension.png" draggable="false" title=""/><a class="Quest1_Aperçu" href="#"></a><p class="QuestText">Archibald</p></div>
+<div id="Quest2" class="Quest2-wrap" style="position: absolute; left: 70.3748093266507%; top: 28.6062191223482%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimension.png" draggable="false" title=""/><a class="Quest2_Aperçu" href="#"></a><p class="QuestText">Inspector Harrold</p></div>
+<div id="Quest3" class="Quest3-wrap" style="position: absolute; left: 58.8799302680323%; top: 62.5014890680613%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimension.png" draggable="false" title=""/><a class="Quest3_Aperçu" href="#"></a><p class="QuestText">Hans</p></div>
+<div id="Quest4" class="Quest4-wrap" style="position: absolute; left: 55.4387302970872%; top: 86.8078012638919%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimension.png" draggable="false" title=""/><a class="Quest4_Aperçu" href="#"></a><p class="QuestText">Egbert</p></div>
+<div id="Quest5" class="Quest5-wrap" style="position: absolute; left: 51.2166775622866%; top: 85.6365221181085%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimension.png" draggable="false" title=""/><a class="Quest5_Aperçu" href="#"></a><p class="QuestText">Adventurer</p></div>
+<div id="Quest6" class="Quest6-wrap" style="position: absolute; left: 29.6788724208079%; top: 56.1275513910075%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimension.png" draggable="false" title=""/><a class="Quest6_Aperçu" href="#"></a><p class="QuestText">Alison & Henry</p></div>
+<div id="Quest7" class="Quest7-wrap" style="position: absolute; left: 13.4499418773612%; top: 81.4598677998111%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimension.png" draggable="false" title=""/><a class="Quest7_Aperçu" href="#"></a><p class="QuestText">Beekeeper</p></div>
+<div id="Quest8" class="Quest8-wrap" style="position: absolute; left: 67.7689402193651%; top: 70.8911164378587%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimension.png" draggable="false" title=""/><a class="Quest8_Aperçu" href="#"></a><p class="QuestText">Temple prospector</p></div>
+<div id="Quest9" class="Quest9-wrap" style="position: absolute; left: 60.8320621776713%; top: 46.4970938680616%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimension.png" draggable="false" title=""/><a class="Quest9_Aperçu" href="#"></a><p class="QuestText">?</p></div>
+<div id="Quest10" class="Quest10-wrap" style="position: absolute; left: 49.8583260680035%; top: 48.8219994187736%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimension.png" draggable="false" title=""/><a class="Quest10_Aperçu" href="#"></a><p class="QuestText">Guild Master, Royal Smith, Fisherman, Captain, Archie, Derric, Salesman, Gerald, Bartender</p></div>
+<div id="Quest11" class="Quest11-wrap" style="position: absolute; left: 47.5515838419064%; top: 74.7045834241302%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimension.png" draggable="false" title=""/><a class="Quest11_Aperçu" href="#"></a><p class="QuestText">Aggrieved Camper</p></div>
+<div id="Quest12" class="Quest12-wrap" style="position: absolute; left: 34.9734815460622%; top: 57.9616474177381%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimension.png" draggable="false" title=""/><a class="Quest12_Aperçu" href="#"></a><p class="QuestText">Catelyn</p></div>
+<div id="Quest13" class="Quest13-wrap" style="position: absolute; left: 18.8172043010753%; top: 22.8756902063354%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimension.png" draggable="false" title=""/><a class="Quest13_Aperçu" href="#"></a><p class="QuestText">Village Guard</p></div>
+<div id="Quest14" class="Quest14-wrap" style="position: absolute; left: 13.5135135135135%; top: 18.4347573379831%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimension.png" draggable="false" title=""/><a class="Quest14_Aperçu" href="#"></a><p class="QuestText">Wandering Adventurer & Hunter</p></div>
+<div id="Quest15" class="Quest15-wrap" style="position: absolute; left: 71.3372557565192%; top: 78.7813612261204%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimension.png" draggable="false" title=""/><a class="Quest15_Aperçu" href="#"></a><p class="QuestText">Peter</p></div>
+<div id="Quest16" class="Quest16-wrap" style="position: absolute; left: 68.4953148834169%; top: 14.5296425457716%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimension.png" draggable="false" title=""/><a class="Quest16_Aperçu" href="#"></a><p class="QuestText">Old Archeologist</p></div>
+<div id="Quest17" class="Quest17-wrap" style="position: absolute; left: 85.4834023389264%; top: 70.6278056221399%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimension.png" draggable="false" title=""/><a class="Quest17_Aperçu" href="#"></a><p class="QuestText">The Old Alchemist</p></div>
+<div id="Quest18" class="Quest18-wrap" style="position: absolute; left: 70.8832715914869%; top: 85.3187332025859%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimension.png" draggable="false" title=""/><a class="Quest18_Aperçu" href="#"></a><p class="QuestText">Foucant</p></div>
+<div id="Quest19" class="Quest19-wrap" style="position: absolute; left: 58.3351492699935%; top: 72.8432483474976%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimension.png" draggable="false" title=""/><a class="Quest19_Aperçu" href="#"></a><p class="QuestText">Lost Adventurer</p></div>
+<div id="Quest20" class="Quest20-wrap" style="position: absolute; left: 68.0322510350839%; top: 74.5774678579211%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimension.png" draggable="false" title=""/><a class="Quest20_Aperçu" href="#"></a><p class="QuestText">Temple Archeologist</p></div>
+<div id="Quest21" class="Quest21-wrap" style="position: absolute; left: 95.2622212537227%; top: 54.8382363623157%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimension.png" draggable="false" title=""/><a class="Quest21_Aperçu" href="#"></a><p class="QuestText">Festive villager</p></div>
+<div id="Quest22" class="Quest22-wrap" style="position: absolute; left: 36.1540976460331%; top: 85.3187332025859%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimension.png" draggable="false" title=""/><a class="Quest22_Aperçu" href="#"></a><p class="QuestText">Woodcutter</p></div>
+<div id="Quest23" class="Quest23-wrap" style="position: absolute; left: 37.2348154606219%; top: 40.6394216797443%; width: 7.8px; height: auto; display: inline-block;"><img class="Exclamation" src="Icons/Exclamation_redimension.png" draggable="false" title=""/><a class="Quest23_Aperçu" href="#"></a><p class="QuestText">?</p></div>
 
 <!--------Quests CSS/Hover------->
 
@@ -2650,7 +2675,26 @@
             transform: scale(1.5); 
             }
 
-/* Do not delete .Exclamation & .Exclamation:hover */
+            .QuestText {
+            z-index: 2;                 
+            color: #fdd521;
+            font-size: 16px;
+            font-family: sans-serif;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px black;
+            position: absolute;
+            top: 75%;
+            left: 0;
+            width:100%;    
+            height:100%;
+            display: none;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            white-space: nowrap;
+            }          
+
+/* Do not delete .Exclamation / .Exclamation:hover / .QuestText */
 
             .Quest1-wrap img {
                 display: block;
@@ -2671,6 +2715,14 @@
 
             .Quest1-wrap:hover .Quest1_Aperçu {
                 display: block;
+            }
+
+            .Quest1-wrap:hover .QuestText {
+                display: flex;
+            }
+
+            .Quest2-wrap:hover .QuestText {
+                display: flex;
             }
 
             .Quest3-wrap img {
@@ -2694,6 +2746,39 @@
                 display: block;
             }
 
+            .Quest3-wrap:hover .QuestText {
+                display: flex;
+            }
+
+            .Quest4-wrap:hover .QuestText {
+                display: flex;
+            }
+
+            .Quest5-wrap img {
+                display: block;
+            }
+
+            .Quest5_Aperçu {
+                z-index: 2;
+                display: none;
+                width: 201px;
+                height: 134px;
+                position: absolute;
+                bottom: 50px;
+                left: -90px;
+                border-radius: 10px;        
+                background: url('Screenshots/Quests/5.jpg');
+                background-size: 201px 134px;
+            }
+
+            .Quest5-wrap:hover .Quest5_Aperçu {
+                display: block;
+            }
+
+            .Quest5-wrap:hover .QuestText {
+                display: flex;
+            }
+
             .Quest6-wrap img {
                 display: block;
             }
@@ -2713,6 +2798,10 @@
 
             .Quest6-wrap:hover .Quest6_Aperçu {
                 display: block;
+            }
+
+            .Quest6-wrap:hover .QuestText {
+                display: flex;
             }
 
             .Quest7-wrap img {
@@ -2736,11 +2825,31 @@
                 display: block;
             }
 
-            .Quest8-wrap img {
+            .Quest7-wrap:hover .QuestText {
+                display: flex;
+            }
+
+            .Quest8-wrap:hover .QuestText {
+                display: flex;
+            }
+
+            .Quest9-wrap:hover .QuestText {
+                display: flex;
+            }
+
+            .Quest10-wrap:hover .QuestText {
+                display: flex;
+            }
+
+            .Quest11-wrap:hover .QuestText {
+                display: flex;
+            }
+
+            .Quest12-wrap img {
                 display: block;
             }
 
-            .Quest8_Aperçu {
+            .Quest12_Aperçu {
                 z-index: 2;
                 display: none;
                 width: 201px;
@@ -2749,19 +2858,27 @@
                 bottom: 50px;
                 left: -90px;
                 border-radius: 10px;        
-                background: url('Screenshots/Quests/8.jpg');
+                background: url('Screenshots/Quests/12.jpg');
                 background-size: 201px 134px;
             }
 
-            .Quest8-wrap:hover .Quest8_Aperçu {
+            .Quest12-wrap:hover .Quest12_Aperçu {
                 display: block;
             }
 
-            .Quest15-wrap img {
+            .Quest12-wrap:hover .QuestText {
+                display: flex;
+            }
+
+            .Quest13-wrap:hover .QuestText {
+                display: flex;
+            }
+
+            .Quest14-wrap img {
                 display: block;
             }
 
-            .Quest15_Aperçu {
+            .Quest14_Aperçu {
                 z-index: 2;
                 display: none;
                 width: 201px;
@@ -2770,12 +2887,45 @@
                 bottom: 50px;
                 left: -90px;
                 border-radius: 10px;        
-                background: url('Screenshots/Quests/15.jpg');
+                background: url('Screenshots/Quests/14.jpg');
                 background-size: 201px 134px;
             }
 
-            .Quest15-wrap:hover .Quest15_Aperçu {
+            .Quest14-wrap:hover .Quest14_Aperçu {
                 display: block;
+            }
+
+            .Quest14-wrap:hover .QuestText {
+                display: flex;
+            }
+
+            .Quest15-wrap:hover .QuestText {
+                display: flex;
+            }
+
+            .Quest16-wrap img {
+                display: block;
+            }
+
+            .Quest16_Aperçu {
+                z-index: 2;
+                display: none;
+                width: 201px;
+                height: 134px;
+                position: absolute;
+                bottom: 50px;
+                left: -90px;
+                border-radius: 10px;        
+                background: url('Screenshots/Quests/16.jpg');
+                background-size: 201px 134px;
+            }
+
+            .Quest16-wrap:hover .Quest16_Aperçu {
+                display: block;
+            }
+
+            .Quest16-wrap:hover .QuestText {
+                display: flex;
             }
 
             .Quest17-wrap img {
@@ -2799,6 +2949,35 @@
                 display: block;
             }
 
+            .Quest17-wrap:hover .QuestText {
+                display: flex;
+            }
+
+            .Quest18-wrap img {
+                display: block;
+            }
+
+            .Quest18_Aperçu {
+                z-index: 2;
+                display: none;
+                width: 201px;
+                height: 134px;
+                position: absolute;
+                bottom: 50px;
+                left: -90px;
+                border-radius: 10px;        
+                background: url('Screenshots/Quests/18.jpg');
+                background-size: 201px 134px;
+            }
+
+            .Quest18-wrap:hover .Quest18_Aperçu {
+                display: block;
+            }
+
+            .Quest18-wrap:hover .QuestText {
+                display: flex;
+            }
+
             .Quest19-wrap img {
                 display: block;
             }
@@ -2818,6 +2997,10 @@
 
             .Quest19-wrap:hover .Quest19_Aperçu {
                 display: block;
+            }
+
+            .Quest19-wrap:hover .QuestText {
+                display: flex;
             }
 
             .Quest20-wrap img {
@@ -2841,67 +3024,121 @@
                 display: block;
             }
 
-            .Quest21-wrap img {
-                display: block;
+            .Quest20-wrap:hover .QuestText {
+                display: flex;
             }
 
-            .Quest21_Aperçu {
-                z-index: 2;
-                display: none;
-                width: 201px;
-                height: 134px;
-                position: absolute;
-                bottom: 50px;
-                left: -90px;
-                border-radius: 10px;        
-                background: url('Screenshots/Quests/21.jpg');
-                background-size: 201px 134px;
+            .Quest21-wrap:hover .QuestText {
+                display: flex;
             }
 
-            .Quest21-wrap:hover .Quest21_Aperçu {
-                display: block;
+            .Quest22-wrap:hover .QuestText {
+                display: flex;
             }
 
-            .Quest22-wrap img {
-                display: block;
+            .Quest23-wrap:hover .QuestText {
+                display: flex;
             }
 
-            .Quest22_Aperçu {
-                z-index: 2;
-                display: none;
-                width: 201px;
-                height: 134px;
-                position: absolute;
-                bottom: 50px;
-                left: -90px;
-                border-radius: 10px;        
-                background: url('Screenshots/Quests/22.jpg');
-                background-size: 201px 134px;
+        </style>
+
+
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------------------------------------Nations-------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<div id="Nation1" class="Nation1-wrap" style="position: absolute; left: 98.4491900922496%; top: 50.8522553933319%; width: 25px; height: auto; display: inline-block;"><img class="Nation" src="Icons/Nation.png" draggable="false" title=""/><a class="Nation1_Aperçu" href="#"></a><p class="NationText">Olymp</p></div>
+<div id="Nation2" class="Nation2-wrap" style="position: absolute; left: 61.6946320912327%; top: 71.4268177525968%; width: 25px; height: auto; display: inline-block;"><img class="Nation" src="Icons/Nation.png" draggable="false" title=""/><a class="Nation2_Aperçu" href="#"></a><p class="NationText">Froggies</p></div>
+<div id="Nation3" class="Nation3-wrap" style="position: absolute; left: 42.8109561174077%; top: 41.0662598081953%; width: 25px; height: auto; display: inline-block;"><img class="Nation" src="Icons/Nation.png" draggable="false" title=""/><a class="Nation3_Aperçu" href="#"></a><p class="NationText">Hithlum</p></div>
+<div id="Nation4" class="Nation4-wrap" style="position: absolute; left: 41.5940133682069%; top: 24.3196745132229%; width: 25px; height: auto; display: inline-block;"><img class="Nation" src="Icons/Nation.png" draggable="false" title=""/><a class="Nation4_Aperçu" href="#"></a><p class="NationText">Duo</p></div>
+<div id="Nation5" class="Nation5-wrap" style="position: absolute; left: 40.9582970066841%; top: 23.6203865155478%; width: 25px; height: auto; display: inline-block;"><img class="Nation" src="Icons/Nation.png" draggable="false" title=""/><a class="Nation5_Aperçu" href="#"></a><p class="NationText">Solo</p></div>
+<div id="Nation6" class="Nation6-wrap" style="position: absolute; left: 40.5587038651555%; top: 39.259009009009%; width: 25px; height: auto; display: inline-block;"><img class="Nation" src="Icons/Nation.png" draggable="false" title=""/><a class="Nation6_Aperçu" href="#"></a><p class="NationText">Red.Lodge</p></div>
+<div id="Nation7" class="Nation7-wrap" style="position: absolute; left: 34.1470502760825%; top: 31.5759226968904%; width: 25px; height: auto; display: inline-block;"><img class="Nation" src="Icons/Nation.png" draggable="false" title=""/><a class="Nation7_Aperçu" href="#"></a><p class="NationText">WestLands</p></div>
+<div id="Nation8" class="Nation8-wrap" style="position: absolute; left: 24.2843650101715%; top: 87.4433790949372%; width: 25px; height: auto; display: inline-block;"><img class="Nation" src="Icons/Nation.png" draggable="false" title=""/><a class="Nation8_Aperçu" href="#"></a><p class="NationText">DawnHaven</p></div>
+<div id="Nation9" class="Nation9-wrap" style="position: absolute; left: 20.8424149956408%; top: 17.7717959895379%; width: 25px; height: auto; display: inline-block;"><img class="Nation" src="Icons/Nation.png" draggable="false" title=""/><a class="Nation9_Aperçu" href="#"></a><p class="NationText">End</p></div>
+<div id="Nation10" class="Nation10-wrap" style="position: absolute; left: 13.6224934612031%; top: 67.8403428488414%; width: 25px; height: auto; display: inline-block;"><img class="Nation" src="Icons/Nation.png" draggable="false" title=""/><a class="Nation10_Aperçu" href="#"></a><p class="NationText">Benelux</p></div>
+<div id="Nation11" class="Nation11-wrap" style="position: absolute; left: 12.3147340889276%; top: 53.803152466042%; width: 25px; height: auto; display: inline-block;"><img class="Nation" src="Icons/Nation.png" draggable="false" title=""/><a class="Nation11_Aperçu" href="#"></a><p class="NationText">Númenor</p></div>
+
+<!----------Nations CSS/Hover---------->
+
+        <style>
+
+            .Nation{
+            width: 35px;
+            height: auto;
+            transition: transform .1s;
+            }
+            
+            .Nation:hover{
+            -ms-transform: scale(1.5); /* IE 9 */
+            -webkit-transform: scale(1.5); /* Safari 3-8 */
+            transform: scale(1.5); 
             }
 
-            .Quest22-wrap:hover .Quest22_Aperçu {
-                display: block;
+            .NationText {
+            z-index: 2;                 
+            color: #47c5ff;
+            font-size: 16px;
+            font-family: sans-serif;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px black;
+            position: absolute;
+            top: 75%;
+            left: 0;
+            width:100%;    
+            height:100%;
+            display: none;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            white-space: nowrap;
             }
 
-            .Quest23-wrap img {
-                display: block;
+/* Do not delete .Chest & .Chest:hover */
+
+            .Nation1-wrap:hover .NationText {
+                display: flex;
             }
 
-            .Quest23_Aperçu {
-                z-index: 2;
-                display: none;
-                width: 201px;
-                height: 134px;
-                position: absolute;
-                bottom: 50px;
-                left: -90px;
-                border-radius: 10px;        
-                background: url('Screenshots/Quests/23.jpg');
-                background-size: 201px 134px;
+            .Nation2-wrap:hover .NationText {
+                display: flex;
             }
 
-            .Quest23-wrap:hover .Quest23_Aperçu {
-                display: block;
+            .Nation3-wrap:hover .NationText {
+                display: flex;
+            }
+
+            .Nation4-wrap:hover .NationText {
+                display: flex;
+            }
+
+            .Nation5-wrap:hover .NationText {
+                display: flex;
+            }
+
+            .Nation6-wrap:hover .NationText {
+                display: flex;
+            }
+
+            .Nation7-wrap:hover .NationText {
+                display: flex;
+            }
+
+            .Nation8-wrap:hover .NationText {
+                display: flex;
+            }
+
+            .Nation9-wrap:hover .NationText {
+                display: flex;
+            }
+
+            .Nation10-wrap:hover .NationText {
+                display: flex;
+            }
+
+            .Nation11-wrap:hover .NationText {
+                display: flex;
             }
 
         </style>
